@@ -2,36 +2,19 @@ package commande;
 
 import java.text.DateFormat;
 
-import utilisateur.Adresses;
-import utilisateur.Client;
-import utilisateur.Employe;
-
 public class Facture {
 	
-	private Client numeroClient;
 	private String numero;
-	private Employe vendeur;
-	private DateFormat date;
-	private Adresses adresse;
-	private Commande commande;
+	private DateFormat dateFacture;
+	private Double montant;
+	private Double TVA;
 	
-	public Facture(Client numeroClient, String numero, Employe vendeur, DateFormat date, Adresses adresse,
-			Commande commande) {
+	public Facture(String numero, DateFormat dateFacture, Double montant, Double tVA) {
 		super();
-		this.numeroClient = numeroClient;
 		this.numero = numero;
-		this.vendeur = vendeur;
-		this.date = date;
-		this.adresse = adresse;
-		this.commande = commande;
-	}
-
-	public Client getNumeroClient() {
-		return numeroClient;
-	}
-
-	public void setNumeroClient(Client numeroClient) {
-		this.numeroClient = numeroClient;
+		this.dateFacture = dateFacture;
+		this.montant = montant;
+		TVA = tVA;
 	}
 
 	public String getNumero() {
@@ -42,44 +25,35 @@ public class Facture {
 		this.numero = numero;
 	}
 
-	public Employe getVendeur() {
-		return vendeur;
+	public DateFormat getDateFacture() {
+		return dateFacture;
 	}
 
-	public void setVendeur(Employe vendeur) {
-		this.vendeur = vendeur;
+	public void setDateFacture(DateFormat dateFacture) {
+		this.dateFacture = dateFacture;
 	}
 
-	public DateFormat getDate() {
-		return date;
+	public Double getMontant() {
+		return montant;
 	}
 
-	public void setDate(DateFormat date) {
-		this.date = date;
+	public void setMontant(Double montant) {
+		this.montant = montant;
 	}
 
-	public Adresses getAdresse() {
-		return adresse;
+	public Double getTVA() {
+		return TVA;
 	}
 
-	public void setAdresse(Adresses adresse) {
-		this.adresse = adresse;
-	}
-
-	public Commande getCommande() {
-		return commande;
-	}
-
-	public void setCommande(Commande commande) {
-		this.commande = commande;
+	public void setTVA(Double tVA) {
+		TVA = tVA;
 	}
 
 	@Override
 	public String toString() {
-		return "Factures [numeroClient=" + numeroClient + ", numero=" + numero + ", vendeur=" + vendeur + ", date="
-				+ date + ", adresse=" + adresse + ", commande=" + commande + "]";
+		return "Facture [numero=" + numero + ", dateFacture=" + dateFacture + ", montant=" + montant + ", TVA=" + TVA
+				+ "]";
 	}
-	
 	
 	
 }

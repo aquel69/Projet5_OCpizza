@@ -3,14 +3,14 @@ package produit;
 public class Pizza {
 	
 	private String nom;
-	private String descritpion;
+	private String description;
 	private Produit ingredient;
 	private Taille taille;
 	
-	public Pizza(String nom, String descritpion, Produit ingredient, Taille taille) {
+	public Pizza(String nom, String description, Produit ingredient, Taille taille) {
 		super();
 		this.nom = nom;
-		this.descritpion = descritpion;
+		this.description = description;
 		this.ingredient = ingredient;
 		this.taille = taille;
 	}
@@ -22,10 +22,10 @@ public class Pizza {
 		this.nom = nom;
 	}
 	public String getDescritpion() {
-		return descritpion;
+		return description;
 	}
 	public void setDescritpion(String descritpion) {
-		this.descritpion = descritpion;
+		this.description = descritpion;
 	}
 	public Produit getIngredient() {
 		return ingredient;
@@ -42,7 +42,7 @@ public class Pizza {
 	
 	@Override
 	public String toString() {
-		return "Pizza [nom=" + nom + ", descritpion=" + descritpion + ", Ingredient=" + ingredient + ", taille="
+		return "Pizza [nom=" + nom + ", description=" + description + ", Ingredient=" + ingredient + ", taille="
 				+ taille + "]";
 	}
 	

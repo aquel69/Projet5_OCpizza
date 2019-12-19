@@ -1,44 +1,38 @@
 package pointDeVente;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import utilisateur.Adresses;
-import utilisateur.Employe;
+import adresse.Adresses;
 
 public class PointDeVente {
 	
-	private Adresses adresse;
-	private List<Employe> listeDesEmployes = new ArrayList<Employe>();
+	private Adresses adresseDuSite;
+	private int siret;
 	
-	public PointDeVente(Adresses adresse, byte numeroMagasin, List<Employe> listeDesEmployes) {
+	public PointDeVente(Adresses adresseDuSite, int siret) {
 		super();
-		this.adresse = adresse;
-		this.listeDesEmployes = listeDesEmployes;
+		this.adresseDuSite = adresseDuSite;
+		this.siret = siret;
 	}
 
-	public Adresses getAdresse() {
-		return adresse;
+	public Adresses getAdresseDuSite() {
+		return adresseDuSite;
 	}
 
-	public void setAdresse(Adresses adresse) {
-		this.adresse = adresse;
-	}
-	
-	public List<Employe> getListeDesEmployes() {
-		return listeDesEmployes;
+	public void setAdresseDuSite(Adresses adresseDuSite) {
+		this.adresseDuSite = adresseDuSite;
 	}
 
-	public void setListeDesEmployes(List<Employe> listeDesEmployes) {
-		this.listeDesEmployes = listeDesEmployes;
+	public int getSiret() {
+		return siret;
+	}
+
+	public void setSiret(int siret) {
+		this.siret = siret;
 	}
 
 	@Override
 	public String toString() {
-		return "pointDeVente [adresse=" + adresse + ", listeDesEmployes="
-				+ listeDesEmployes + "]";
+		return "PointDeVente [adresseDuSite=" + adresseDuSite + ", siret=" + siret + "]";
 	}
 	
-	
-	
+		
 }

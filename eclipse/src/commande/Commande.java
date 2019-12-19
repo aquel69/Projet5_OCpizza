@@ -2,90 +2,83 @@ package commande;
 
 import java.text.DateFormat;
 
+import adresse.Adresses;
 import pointDeVente.PointDeVente;
-import utilisateur.Adresses;
 import utilisateur.Employe;
 
 public class Commande {
 	                                       
 	private String numero;                 
 	private Employe vendeur;               
-	private DateFormat date;               
-	private LigneDeCommande ligne;       
-	private byte etat;                     
+	private DateFormat dateEnregistrement;               
 	private Facture facture;  
+	private PointDeVente siret;
 	private Adresses adresseDeLivraison;
-	private PointDeVente pointDeVente;
 	
-	public Commande(String numero, Employe vendeur, DateFormat date, LigneDeCommande ligne, byte etat, Facture facture,
-			Adresses adresseDeLivraison, PointDeVente pointDeVente) {
+	public Commande(String numero, Employe vendeur, DateFormat dateEnregistrement, Facture facture, PointDeVente siret,
+			Adresses adresseDeLivraison) {
 		super();
 		this.numero = numero;
 		this.vendeur = vendeur;
-		this.date = date;
-		this.ligne = ligne;
-		this.etat = etat;
+		this.dateEnregistrement = dateEnregistrement;
 		this.facture = facture;
+		this.siret = siret;
 		this.adresseDeLivraison = adresseDeLivraison;
-		this.pointDeVente = pointDeVente;
 	}
-	
-	
+
 	public String getNumero() {
 		return numero;
 	}
+
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
+
 	public Employe getVendeur() {
 		return vendeur;
 	}
+
 	public void setVendeur(Employe vendeur) {
 		this.vendeur = vendeur;
 	}
-	public DateFormat getDate() {
-		return date;
+
+	public DateFormat getDateEnregistrement() {
+		return dateEnregistrement;
 	}
-	public void setDate(DateFormat date) {
-		this.date = date;
+
+	public void setDateEnregistrement(DateFormat dateEnregistrement) {
+		this.dateEnregistrement = dateEnregistrement;
 	}
-	public LigneDeCommande getLigne() {
-		return ligne;
-	}
-	public void setLigne(LigneDeCommande ligne) {
-		this.ligne = ligne;
-	}
-	public byte getEtat() {
-		return etat;
-	}
-	public void setEtat(byte etat) {
-		this.etat = etat;
-	}
+
 	public Facture getFacture() {
 		return facture;
 	}
+
 	public void setFacture(Facture facture) {
 		this.facture = facture;
 	}
+
+	public PointDeVente getSiret() {
+		return siret;
+	}
+
+	public void setSiret(PointDeVente siret) {
+		this.siret = siret;
+	}
+
 	public Adresses getAdresseDeLivraison() {
 		return adresseDeLivraison;
 	}
+
 	public void setAdresseDeLivraison(Adresses adresseDeLivraison) {
 		this.adresseDeLivraison = adresseDeLivraison;
 	}
-	public PointDeVente getPointDeVente() {
-		return pointDeVente;
-	}
-	public void setPointDeVente(PointDeVente pointDeVente) {
-		this.pointDeVente = pointDeVente;
-	}
-	
+
 	@Override
 	public String toString() {
-		return "Commande [numero=" + numero + ", vendeur=" + vendeur + ", date=" + date + ", ligne=" + ligne + ", etat="
-				+ etat + ", facture=" + facture + ", adresseDeLivraison=" + adresseDeLivraison + ", pointDeVente="
-				+ pointDeVente + "]";
+		return "Commande [numero=" + numero + ", vendeur=" + vendeur + ", dateEnregistrement=" + dateEnregistrement
+				+ ", facture=" + facture + ", siret=" + siret + ", adresseDeLivraison=" + adresseDeLivraison + "]";
 	}
 	
-			
+				
 }

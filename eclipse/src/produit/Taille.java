@@ -1,46 +1,44 @@
 package produit;
 
-public class Taille {
+public enum Taille {
 	
-	String petite;
-	String moyenne;
-	String grande;
+	Petite(1, "petite", 1),
+	Moyenne(2, "moyenne", 2),
+	Grande(3, "grande", 3);
 	
-	public Taille(String petite, String moyenne, String grande) {
-		super();
-		this.petite = petite;
-		this.moyenne = moyenne;
-		this.grande = grande;
+	private int id;
+	private String taille;
+	private int quantite;
+	
+	private Taille(int id, String taille, int quantite) {
+		this.id = id;
+		this.taille = taille;
+		this.quantite = quantite;
 	}
 
-	public String getPetite() {
-		return petite;
+	public int getId() {
+		return id;
 	}
 
-	public void setPetite(String petite) {
-		this.petite = petite;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public String getMoyenne() {
-		return moyenne;
+	public String getTaille() {
+		return taille;
 	}
 
-	public void setMoyenne(String moyenne) {
-		this.moyenne = moyenne;
+	public void setTaille(String taille) {
+		this.taille = taille;
 	}
 
-	public String getGrande() {
-		return grande;
+	public int getQuantite() {
+		return quantite;
 	}
 
-	public void setGrande(String grande) {
-		this.grande = grande;
-	}
-
-	@Override
-	public String toString() {
-		return "Taille [petite=" + petite + ", moyenne=" + moyenne + ", grande=" + grande + "]";
+	public void setQuantite(int quantite) {
+		this.quantite = quantite;
 	}
 	
-		
+			
 }

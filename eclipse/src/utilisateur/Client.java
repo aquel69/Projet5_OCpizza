@@ -2,7 +2,7 @@ package utilisateur;
 
 import java.text.DateFormat;
 
-import authentification.Authentification;
+import adresse.Adresses;
 
 public class Client extends Utilisateurs{
 	
@@ -10,20 +10,18 @@ public class Client extends Utilisateurs{
 	protected String numero;
 	protected Adresses adresseLivraison;
 	protected String eMail;
-	
-	public Client(String nom, String nomDeJeuneFille, String prenom, DateFormat dateDeNaissance,
-			DateFormat dateDeCreationDeCompte, Adresses adressePostale, int numeroTelephoneMobile,
-			int numeroTelephoneFixe, byte niveauDAcces, Authentification authentifier, String numero,
+			
+	public Client(String nom, String prenom, DateFormat dateDeNaissance, DateFormat dateDeCreationDeCompte,
+			Adresses adressePostale, int numeroTelephoneMobile, int numeroTelephoneFixe, String numero,
 			Adresses adresseLivraison, String eMail) {
-		super(nom, nomDeJeuneFille, prenom, dateDeNaissance, dateDeCreationDeCompte, adressePostale,
-				numeroTelephoneMobile, numeroTelephoneFixe, niveauDAcces, authentifier);
+		super(nom, prenom, dateDeNaissance, dateDeCreationDeCompte, adressePostale, numeroTelephoneMobile,
+				numeroTelephoneFixe);
 		this.numero = numero;
 		this.adresseLivraison = adresseLivraison;
 		this.eMail = eMail;
 	}
 
 
-		
 	public String getNumero() {
 		return numero;
 	}

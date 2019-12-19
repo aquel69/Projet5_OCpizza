@@ -4,13 +4,11 @@ public class Categorie {
 	
 	String classe;
 	String sousClasse;
-	Produit produit;
-	
-	public Categorie(String classe, String sousClasse, Produit produit) {
+		
+	public Categorie(String classe, String sousClasse) {
 		super();
 		this.classe = classe;
 		this.sousClasse = sousClasse;
-		this.produit = produit;
 	}
 
 	public String getClasse() {
@@ -29,17 +27,10 @@ public class Categorie {
 		this.sousClasse = sousClasse;
 	}
 
-	public Produit getProduit() {
-		return produit;
-	}
-
-	public void setProduit(Produit produit) {
-		this.produit = produit;
-	}
-
+	
 	@Override
 	public String toString() {
-		return "Categorie [classe=" + classe + ", sousClasse=" + sousClasse + ", produit=" + produit + "]";
+		return "Categorie [classe=" + classe + ", sousClasse=" + sousClasse + "]";
 	}
 	
 		

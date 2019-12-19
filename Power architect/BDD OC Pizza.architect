@@ -109,7 +109,7 @@
   <table id="TAB25" populated="true" UUID="09aa5eeb-9324-4d85-b62d-d920a3b99b68" name="role" objectType="TABLE" physicalName="role" >
    <remarks></remarks>
    <folder id="FOLTAB251" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL26" populated="true" UUID="cc077953-8021-43fd-949e-f74f620cdf6c" autoIncrement="true" autoIncrementSequenceName="role_id_seq_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL26" populated="true" UUID="cc077953-8021-43fd-949e-f74f620cdf6c" autoIncrement="false" autoIncrementSequenceName="role_id_seq_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL27" populated="true" UUID="bfc697d8-aa18-4c75-b435-e9a6b351123f" autoIncrement="false" autoIncrementSequenceName="role_role_seq" defaultValue="" name="role" nullable="0" physicalName="role" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -132,7 +132,7 @@
   <table id="TAB31" populated="true" UUID="79fecb62-c266-4232-925a-35affdf9d6ae" name="authentification" objectType="TABLE" physicalName="authentification" >
    <remarks></remarks>
    <folder id="FOLTAB311" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL32" populated="true" UUID="edcee82f-c7d6-4f57-89ff-ea6e20170eb8" autoIncrement="false" autoIncrementSequenceName="utilisateur_id_utilisateur_seq_2" defaultValue="" name="id_utilisateur" nullable="0" physicalName="id_utilisateur" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL32" populated="true" UUID="edcee82f-c7d6-4f57-89ff-ea6e20170eb8" autoIncrement="false" autoIncrementSequenceName="authentification_id_utilisateur_seq" defaultValue="" name="id_utilisateur" nullable="0" physicalName="id_utilisateur" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL33" populated="true" UUID="40f4fb16-8777-479f-aae8-46b114204511" autoIncrement="false" autoIncrementSequenceName="authentification_username_seq" defaultValue="" name="username" nullable="0" physicalName="username" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -204,7 +204,7 @@
   <table id="TAB50" populated="true" UUID="daf926c4-be89-4712-823d-eb7deba1f6e3" name="commande" objectType="TABLE" physicalName="commande" >
    <remarks></remarks>
    <folder id="FOLTAB501" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL51" populated="true" UUID="a6c63d74-7d21-4475-ac90-5504c4c31eb5" autoIncrement="false" autoIncrementSequenceName="commande_numero_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL51" populated="true" UUID="a6c63d74-7d21-4475-ac90-5504c4c31eb5" autoIncrement="true" autoIncrementSequenceName="commande_numero_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL52" populated="true" UUID="90dc48e6-116f-41a6-8d91-226cdd4c31b5" autoIncrement="false" autoIncrementSequenceName="commande_numero_seq_1" defaultValue="" name="numero" nullable="0" physicalName="numero" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
@@ -268,7 +268,7 @@
   <table id="TAB68" populated="true" UUID="fbb60d6b-94b2-469e-85cb-2862aed7956a" name="ligne_de_commande" objectType="TABLE" physicalName="ligne_de_commande" >
    <remarks></remarks>
    <folder id="FOLTAB681" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL69" populated="true" UUID="65d48f84-d1ab-48b9-a011-c62eb616a16f" autoIncrement="false" autoIncrementSequenceName="ligne_de_commande_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL69" populated="true" UUID="65d48f84-d1ab-48b9-a011-c62eb616a16f" autoIncrement="true" autoIncrementSequenceName="ligne_de_commande_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL70" populated="true" UUID="78dbe05d-f42b-44b1-a400-1f21a33b0878" autoIncrement="false" autoIncrementSequenceName="commande_numero_seq_2" defaultValue="" name="id_commande" nullable="0" physicalName="id_commande" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
@@ -323,7 +323,7 @@
   <table id="TAB83" populated="true" UUID="49aa39df-85bc-44cd-ad24-b471b1769d35" name="produit" objectType="TABLE" physicalName="produit" >
    <remarks></remarks>
    <folder id="FOLTAB831" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL84" populated="true" UUID="b6259118-80ac-4db8-a654-3d3b3515dcb0" autoIncrement="false" autoIncrementSequenceName="produit_id_seq_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL84" populated="true" UUID="b6259118-80ac-4db8-a654-3d3b3515dcb0" autoIncrement="true" autoIncrementSequenceName="produit_id_seq_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL85" populated="true" UUID="5f4ba00b-6c3d-43a5-baf3-49e54f8ea7c3" autoIncrement="false" autoIncrementSequenceName="produit_reference_article_seq" defaultValue="" name="reference_article" nullable="0" physicalName="reference_article" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -436,7 +436,7 @@
   <table id="TAB114" populated="true" UUID="e6bdb88b-b5f4-4636-b238-d294157062cb" name="pizza" objectType="TABLE" physicalName="pizza" >
    <remarks></remarks>
    <folder id="FOLTAB1141" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL115" populated="true" UUID="08a86443-b5af-4a7b-94c6-b38fa6782d72" autoIncrement="false" autoIncrementSequenceName="pizza_id_seq_2" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL115" populated="true" UUID="08a86443-b5af-4a7b-94c6-b38fa6782d72" autoIncrement="true" autoIncrementSequenceName="pizza_id_seq_2" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL116" populated="true" UUID="587770a2-6a6a-44f8-8202-d209b02cd7ff" autoIncrement="false" autoIncrementSequenceName="pizza_nom_seq" defaultValue="" name="nom" nullable="0" physicalName="nom" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -448,7 +448,7 @@
     <column id="COL118" populated="true" UUID="11fc5cc2-a2be-49c9-becf-aa8271944174" autoIncrement="false" autoIncrementSequenceName="produit_id_seq_3" defaultValue="" name="id_ingredient" nullable="0" physicalName="id_ingredient" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL119" populated="true" UUID="7d155592-ec5f-49d8-98fd-05b46312ffe7" autoIncrement="false" autoIncrementSequenceName="taille_id_seq" defaultValue="" name="id_taille" nullable="0" physicalName="id_taille" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL119" populated="true" UUID="7d155592-ec5f-49d8-98fd-05b46312ffe7" autoIncrement="false" autoIncrementSequenceName="taille_id_seq" defaultValue="" name="id_taille" nullable="0" physicalName="id_1" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -465,7 +465,7 @@
   <table id="TAB122" populated="true" UUID="52aa260c-299b-42e2-9bfe-d58fad6af5bf" name="taille" objectType="TABLE" physicalName="taille" >
    <remarks></remarks>
    <folder id="FOLTAB1221" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL123" populated="true" UUID="a916dbf2-b284-4fdb-8013-c486dee2a097" autoIncrement="true" autoIncrementSequenceName="taille_id_seq_1" defaultValue="" name="id_taille" nullable="0" physicalName="id_taille" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL123" populated="true" UUID="a916dbf2-b284-4fdb-8013-c486dee2a097" autoIncrement="false" autoIncrementSequenceName="taille_id_seq_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL124" populated="true" UUID="3518bcd8-2de7-4c8a-8bfc-84bbd036a997" autoIncrement="false" autoIncrementSequenceName="taille_taille_seq" defaultValue="" name="taille" nullable="0" physicalName="taille" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -481,7 +481,7 @@
     </folder>
     <folder id="FOLTAB1224" populated="true" name="Indices" physicalName="Indices" type="4">
     <index id="IDX126" populated="true" UUID="8f720a52-5df5-4dec-96e0-eaaedc0ff197" clustered="false" name="taille_pk" physicalName="taille_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC127" populated="true" UUID="4ced2670-3f57-4e50-9d42-47a81b7a461b" ascendingOrDescending="UNSPECIFIED" column-ref="COL123" name="id_taille" physicalName="id_taille" />
+     <index-column id="IDC127" populated="true" UUID="4ced2670-3f57-4e50-9d42-47a81b7a461b" ascendingOrDescending="UNSPECIFIED" column-ref="COL123" name="id" physicalName="id" />
     </index>
    </folder>
   </table>
@@ -511,7 +511,7 @@
   <table id="TAB134" populated="true" UUID="4214e325-3ec7-464b-a5d2-df2d78bc4d87" name="commande_etat_commande" objectType="TABLE" physicalName="commande_etat_commande" >
    <remarks></remarks>
    <folder id="FOLTAB1341" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL135" populated="true" UUID="d195d4a8-7f16-4134-ad9e-0c10fd782846" autoIncrement="false" autoIncrementSequenceName="commande_etat_commande_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL135" populated="true" UUID="d195d4a8-7f16-4134-ad9e-0c10fd782846" autoIncrement="true" autoIncrementSequenceName="commande_etat_commande_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL136" populated="true" UUID="7557de27-57fc-4ba6-b9d3-e697effc19d3" autoIncrement="false" autoIncrementSequenceName="commande_numero_seq_3" defaultValue="" name="id_commande" nullable="0" physicalName="id_commande" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
@@ -600,15 +600,15 @@
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="OCpizza2"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="1.0" viewportX="319" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="946" y="261" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB12" x="540" y="270" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB19" x="1350" y="294" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB25" x="1375" y="134" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB31" x="1001" y="131" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB31" x="1001" y="131" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB37" x="1005" y="500" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB45" x="1275" y="520" bgColor="0xc7d0df" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB50" x="998" y="681" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
@@ -633,7 +633,7 @@
   <table-link relationship-ref="REL170" pkConnection="0.4396135265700483" fkConnection="0.4896265560165975" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
   <table-link relationship-ref="REL140" pkConnection="0.55" fkConnection="0.46875" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
   <table-link relationship-ref="REL176" pkConnection="0.2932692307692308" fkConnection="0.45390070921985815" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="36"/>
-  <table-link relationship-ref="REL172" pkConnection="0.4830917874396135" fkConnection="0.705" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL172" pkConnection="0.23870967741935484" fkConnection="0.705" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="66"/>
   <table-link relationship-ref="REL178" pkConnection="0.5" fkConnection="0.5" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
   <table-link relationship-ref="REL160" pkConnection="0.4521072796934866" fkConnection="0.47342995169082125" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
   <table-link relationship-ref="REL182" pkConnection="0.4973544973544973" fkConnection="0.4948453608247423" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>

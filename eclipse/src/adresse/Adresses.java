@@ -1,4 +1,4 @@
-package utilisateur;
+package adresse;
 
 public class Adresses {
 	

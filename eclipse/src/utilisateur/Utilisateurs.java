@@ -2,35 +2,28 @@ package utilisateur;
 
 import java.text.DateFormat;
 
-import authentification.Authentification;
+import adresse.Adresses;
 
 public class Utilisateurs {
 	
 	protected String nom;
-	protected String nomDeJeuneFille;
 	protected String prenom;
 	protected DateFormat dateDeNaissance;
 	protected DateFormat dateDeCreationDeCompte;
 	protected Adresses adressePostale;
 	protected int numeroTelephoneMobile;
 	protected int numeroTelephoneFixe;
-	protected byte niveauDAcces;
-	protected Authentification authentifier;
 	
-	public Utilisateurs(String nom, String nomDeJeuneFille, String prenom, DateFormat dateDeNaissance,
-			DateFormat dateDeCreationDeCompte, Adresses adressePostale, int numeroTelephoneMobile,
-			int numeroTelephoneFixe, byte niveauDAcces, Authentification authentifier) {
+	public Utilisateurs(String nom, String prenom, DateFormat dateDeNaissance, DateFormat dateDeCreationDeCompte,
+			Adresses adressePostale, int numeroTelephoneMobile, int numeroTelephoneFixe) {
 		super();
 		this.nom = nom;
-		this.nomDeJeuneFille = nomDeJeuneFille;
 		this.prenom = prenom;
 		this.dateDeNaissance = dateDeNaissance;
 		this.dateDeCreationDeCompte = dateDeCreationDeCompte;
 		this.adressePostale = adressePostale;
 		this.numeroTelephoneMobile = numeroTelephoneMobile;
 		this.numeroTelephoneFixe = numeroTelephoneFixe;
-		this.niveauDAcces = niveauDAcces;
-		this.authentifier = authentifier;
 	}
 
 	public String getNom() {
@@ -39,14 +32,6 @@ public class Utilisateurs {
 
 	public void setNom(String nom) {
 		this.nom = nom;
-	}
-
-	public String getNomDeJeuneFille() {
-		return nomDeJeuneFille;
-	}
-
-	public void setNomDeJeuneFille(String nomDeJeuneFille) {
-		this.nomDeJeuneFille = nomDeJeuneFille;
 	}
 
 	public String getPrenom() {
@@ -97,32 +82,13 @@ public class Utilisateurs {
 		this.numeroTelephoneFixe = numeroTelephoneFixe;
 	}
 
-	public byte getNiveauDAcces() {
-		return niveauDAcces;
-	}
-
-	public void setNiveauDAcces(byte niveauDAcces) {
-		this.niveauDAcces = niveauDAcces;
-	}
-
-	public Authentification getAuthentifier() {
-		return authentifier;
-	}
-
-	public void setAuthentifier(Authentification authentifier) {
-		this.authentifier = authentifier;
-	}
-
 	@Override
 	public String toString() {
-		return "Utilisateurs [nom=" + nom + ", nomDeJeuneFille=" + nomDeJeuneFille + ", prenom=" + prenom
-				+ ", dateDeNaissance=" + dateDeNaissance + ", dateDeCreationDeCompte=" + dateDeCreationDeCompte
-				+ ", adressePostale=" + adressePostale + ", numeroTelephoneMobile=" + numeroTelephoneMobile
-				+ ", numeroTelephoneFixe=" + numeroTelephoneFixe + ", niveauDAcces=" + niveauDAcces + ", authentifier="
-				+ authentifier + "]";
+		return "Utilisateurs [nom=" + nom + ", prenom=" + prenom + ", dateDeNaissance=" + dateDeNaissance
+				+ ", dateDeCreationDeCompte=" + dateDeCreationDeCompte + ", adressePostale=" + adressePostale
+				+ ", numeroTelephoneMobile=" + numeroTelephoneMobile + ", numeroTelephoneFixe=" + numeroTelephoneFixe
+				+ "]";
 	}
-	
-	
-	
+			
 	
 }

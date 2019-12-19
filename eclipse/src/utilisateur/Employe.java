@@ -2,28 +2,27 @@ package utilisateur;
 
 import java.text.DateFormat;
 
-import authentification.Authentification;
+import adresse.Adresses;
 
 public class Employe extends Utilisateurs {
 	
-	protected String statut;
+	protected int numeroEmploye;
 	protected Role role;
-	
-	public Employe(String nom, String nomDeJeuneFille, String prenom, DateFormat dateDeNaissance,
-			DateFormat dateDeCreationDeCompte, Adresses adressePostale, int numeroTelephoneMobile,
-			int numeroTelephoneFixe, byte niveauDAcces, Authentification authentifier, String statut, Role role) {
-		super(nom, nomDeJeuneFille, prenom, dateDeNaissance, dateDeCreationDeCompte, adressePostale,
-				numeroTelephoneMobile, numeroTelephoneFixe, niveauDAcces, authentifier);
-		this.statut = statut;
+		
+	public Employe(String nom, String prenom, DateFormat dateDeNaissance, DateFormat dateDeCreationDeCompte,
+			Adresses adressePostale, int numeroTelephoneMobile, int numeroTelephoneFixe, int numeroEmploye, Role role) {
+		super(nom, prenom, dateDeNaissance, dateDeCreationDeCompte, adressePostale, numeroTelephoneMobile,
+				numeroTelephoneFixe);
+		this.numeroEmploye = numeroEmploye;
 		this.role = role;
 	}
 
-	public String getStatut() {
-		return statut;
+	public int getNumeroEmploye() {
+		return numeroEmploye;
 	}
 
-	public void setStatut(String statut) {
-		this.statut = statut;
+	public void setNumeroEmploye(int numeroEmploye) {
+		this.numeroEmploye = numeroEmploye;
 	}
 
 	public Role getRole() {
@@ -36,7 +35,8 @@ public class Employe extends Utilisateurs {
 
 	@Override
 	public String toString() {
-		return "Employe [statut=" + statut + ", role=" + role + "]";
+		return "Employe [numeroEmploye=" + numeroEmploye + ", role=" + role + "]";
 	}
-			
+	
+				
 }

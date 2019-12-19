@@ -1,27 +1,36 @@
 package produit;
 
-import java.util.ArrayList;
-
 public class Recette {
 	
-	private ArrayList<Pizza> listeDesPizzas;
-
-	public Recette(ArrayList<Pizza> listeDesPizzas) {
+	private Pizza pizza;
+	private String recette;
+	
+	public Recette(Pizza pizza, String recette) {
 		super();
-		this.listeDesPizzas = listeDesPizzas;
+		this.pizza = pizza;
+		this.recette = recette;
 	}
 
-	public ArrayList<Pizza> getListeDesPizzas() {
-		return listeDesPizzas;
+	public Pizza getPizza() {
+		return pizza;
 	}
 
-	public void setListeDesPizzas(ArrayList<Pizza> listeDesPizzas) {
-		this.listeDesPizzas = listeDesPizzas;
+	public void setPizza(Pizza pizza) {
+		this.pizza = pizza;
+	}
+
+	public String getRecette() {
+		return recette;
+	}
+
+	public void setRecette(String recette) {
+		this.recette = recette;
 	}
 
 	@Override
 	public String toString() {
-		return "Recette [listeDesPizzas=" + listeDesPizzas + "]";
+		return "Recette [pizza=" + pizza + ", recette=" + recette + "]";
 	}
 	
+		
 }	
