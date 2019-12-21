@@ -5,14 +5,14 @@ import java.text.DateFormat;
 public class Facture {
 	
 	private String numero;
-	private DateFormat dateFacture;
+	private DateFormat date;
 	private Double montant;
 	private Double TVA;
 	
 	public Facture(String numero, DateFormat dateFacture, Double montant, Double tVA) {
 		super();
 		this.numero = numero;
-		this.dateFacture = dateFacture;
+		this.date = dateFacture;
 		this.montant = montant;
 		TVA = tVA;
 	}
@@ -26,11 +26,11 @@ public class Facture {
 	}
 
 	public DateFormat getDateFacture() {
-		return dateFacture;
+		return date;
 	}
 
 	public void setDateFacture(DateFormat dateFacture) {
-		this.dateFacture = dateFacture;
+		this.date = dateFacture;
 	}
 
 	public Double getMontant() {
@@ -51,7 +51,7 @@ public class Facture {
 
 	@Override
 	public String toString() {
-		return "Facture [numero=" + numero + ", dateFacture=" + dateFacture + ", montant=" + montant + ", TVA=" + TVA
+		return "Facture [numero=" + numero + ", dateFacture=" + date + ", montant=" + montant + ", TVA=" + TVA
 				+ "]";
 	}
 	

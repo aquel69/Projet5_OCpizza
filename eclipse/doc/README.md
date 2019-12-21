@@ -78,3 +78,4 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 	
 ![photo création de la base de données 5](créationBaseDeDonnées5.png "création de la base de données 5")  
 	&nbsp;  
+  
