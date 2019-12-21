@@ -39,10 +39,16 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
   &nbsp;
 4. Une fois dans le fichier du diagramme, je déplace les classes que je souhaite mettre dans celui-ci. Le diagramme est créé.
   &nbsp;
+<<<<<<< HEAD
 5. Je créé sur le logiciel "Visio" un diagramme à partir de celui généré sur Eclipse. Celui-ci est plus complet et plus présentable.  
 	&nbsp;  
 ![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/71312030-4d234f80-241e-11ea-8179-1b0b5715fbe0.png)  
 	&nbsp;  
+=======
+5. Je créé sur le logiciel "Visio" un diagramme à partir de celui d'Eclipse. Celui-ci est plus complet et plus présentable.
+![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/71310811-6a512180-2410-11ea-9d12-aa19dad18ab0.png)  
+ 	&nbsp;
+>>>>>>> d16f4b6dda8d755d51fbf5cb512e7e59479df4f0
 
 
 ## Modèle Physique de Données
