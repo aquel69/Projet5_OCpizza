@@ -78,4 +78,19 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 	
 ![photo création de la base de données 5](créationBaseDeDonnées5.png "création de la base de données 5")  
 	&nbsp;  
-  
+	
+## Sauvegarder un Schéma ou des données
+1. Dans pgAdmin4, je selectionne 'Outils' dans la barre de menu, puis 'Sauvegarder' dans le menu déroulant. Je vais commencer par sauvegarder le schéma.
+2. La fenêtre Backup s'affiche, dans l'onglet 'General', je clique sur le nom de fichier et donne un nom à mon fichier en s'assurant de mettre l'extension .sql à la fin.  
+	&nbsp;  
+![photo Sauvegarde 1](Sauvegarde1.png "Sauvegarde 1")  
+	&nbsp;  
+3. De retour dans la fenêtre backup, je mets le type de format sur 'Fichier plat', l'encodage sur 'UTF8' et le rôle sur 'postrgres'.  
+	&nbsp;  
+![photo Sauvegarde 2](Sauvegarde2.png "Sauvegarde 2")  
+	&nbsp;  
+4. Je sélectionne ensuite l'onglet 'Options de sauvegarde'. Je mets le type 'Shéma uniquement' sur 'yes et laisse le 'Blobs' sur 'yes' également. Dans la section requête je met également sur 'yes' tout ce qui concerne les commandes INSERT. Une fois toute les étapes effectuées, je clique sur 'Sauvegarde
+	&nbsp;  
+![photo Sauvegarde 3](Sauvegarde3.png "Sauvegarde 3")  
+	&nbsp;  
+5. La sauvegarde de mon schéma est crée. Je répète le même processus pour les données, en retirant juste le type 'Shéma uniquement' et en mettant à la place 'Données uniquement' sur 'yes' dans 'Options de sauvegarde'.

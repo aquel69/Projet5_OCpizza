@@ -42,13 +42,8 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 <<<<<<< HEAD
 5. Je créé sur le logiciel "Visio" un diagramme à partir de celui généré sur Eclipse. Celui-ci est plus complet et plus présentable.  
 	&nbsp;  
-![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/71312030-4d234f80-241e-11ea-8179-1b0b5715fbe0.png)  
+![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/71312464-36cbc280-2423-11ea-8ea0-24f10fed48fd.png)
 	&nbsp;  
-=======
-5. Je créé sur le logiciel "Visio" un diagramme à partir de celui d'Eclipse. Celui-ci est plus complet et plus présentable.
-![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/71310811-6a512180-2410-11ea-9d12-aa19dad18ab0.png)  
- 	&nbsp;
->>>>>>> d16f4b6dda8d755d51fbf5cb512e7e59479df4f0
 
 
 ## Modèle Physique de Données
@@ -85,3 +80,18 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 ![créationBaseDeDonnées5](https://user-images.githubusercontent.com/45402044/71312107-37faf080-241f-11ea-8cb4-7f3734d1d59e.png)  
   	&nbsp;  
  
+ ## Sauvegarder un Schéma ou des données
+1. Dans pgAdmin4, je selectionne 'Outils' dans la barre de menu, puis 'Sauvegarder' dans le menu déroulant. Je vais commencer par sauvegarder le schéma.
+2. La fenêtre Backup s'affiche, dans l'onglet 'General', je clique sur le nom de fichier et donne un nom à mon fichier en s'assurant de mettre l'extension .sql à la fin.  
+	&nbsp;  
+![Sauvegarde1](https://user-images.githubusercontent.com/45402044/71320799-75f02700-24a8-11ea-839b-c0c5ddc6e8db.png)  
+	&nbsp;  
+3. De retour dans la fenêtre backup, je mets le type de format sur 'Fichier plat', l'encodage sur 'UTF8' et le rôle sur 'postrgres'.  
+	&nbsp;  
+![Sauvegarde2](https://user-images.githubusercontent.com/45402044/71320825-d97a5480-24a8-11ea-88b6-72316e6aa45c.png)  
+	&nbsp;  
+4. Je sélectionne ensuite l'onglet 'Options de sauvegarde'. Je mets le type 'Shéma uniquement' sur 'yes et laisse le 'Blobs' sur 'yes' également. Dans la section requête je met également sur 'yes' tout ce qui concerne les commandes INSERT. Une fois toute les étapes effectuées, je clique sur 'Sauvegarde  
+	&nbsp;  
+![Sauvegarde3](https://user-images.githubusercontent.com/45402044/71320827-ea2aca80-24a8-11ea-9ae5-af11291bc744.png)
+ 	&nbsp;  
+5. La sauvegarde de mon schéma est crée. Je répète le même processus pour les données, en retirant juste le type 'Shéma uniquement' et en mettant à la place 'Données uniquement' sur 'yes' dans 'Options de sauvegarde'.
