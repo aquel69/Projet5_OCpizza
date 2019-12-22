@@ -39,7 +39,7 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
   &nbsp;
 4. Une fois dans le fichier du diagramme, je déplace les classes que je souhaite mettre dans celui-ci. Le diagramme est créé.
   &nbsp;
-<<<<<<< HEAD
+
 5. Je créé sur le logiciel "Visio" un diagramme à partir de celui généré sur Eclipse. Celui-ci est plus complet et plus présentable.  
 	&nbsp;  
 ![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/71312464-36cbc280-2423-11ea-8ea0-24f10fed48fd.png)

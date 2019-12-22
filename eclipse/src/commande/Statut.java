@@ -1,6 +1,6 @@
 package commande;
 
-public enum Status {
+public enum Statut {
 	
 	commandeValide(1, "Commande validée", "La commande a été validée par le client."),
 	commandeAnnule(2, "Commande annulée", "La commande a été annulée par le client."),
@@ -16,7 +16,7 @@ public enum Status {
 	private String code = "";
 	private String description = "";
 	
-	Status(int id, String code, String description) {
+	Statut(int id, String code, String description) {
 		this.id = id;
 		this.code = code;
 		this.description = description;

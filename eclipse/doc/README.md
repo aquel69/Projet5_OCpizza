@@ -89,7 +89,7 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 	&nbsp;  
 ![photo Sauvegarde 2](Sauvegarde2.png "Sauvegarde 2")  
 	&nbsp;  
-4. Je sélectionne ensuite l'onglet 'Options de sauvegarde'. Je mets le type 'Shéma uniquement' sur 'yes et laisse le 'Blobs' sur 'yes' également. Dans la section requête je met également sur 'yes' tout ce qui concerne les commandes INSERT. Une fois toute les étapes effectuées, je clique sur 'Sauvegarde
+4. Je sélectionne ensuite l'onglet 'Options de sauvegarde'. Je mets le type 'Shéma uniquement' sur 'yes et laisse le 'Blobs' sur 'yes' également. Dans la section requête je met également sur 'yes' tout ce qui concerne les commandes INSERT. Une fois toute les étapes effectuées, je clique sur 'Sauvegarde  
 	&nbsp;  
 ![photo Sauvegarde 3](Sauvegarde3.png "Sauvegarde 3")  
 	&nbsp;  

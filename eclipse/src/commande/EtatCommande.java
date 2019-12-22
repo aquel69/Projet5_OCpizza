@@ -4,20 +4,20 @@ import java.text.DateFormat;
 
 public class EtatCommande {
 	
-	private Status status;
+	private Statut status;
 	private DateFormat date;
 	
-	public EtatCommande(Status status, DateFormat date) {
+	public EtatCommande(Statut status, DateFormat date) {
 		super();
 		this.status = status;
 		this.date = date;
 	}
 
-	public Status getStatus() {
+	public Statut getStatus() {
 		return status;
 	}
 
-	public void setStatus(Status status) {
+	public void setStatus(Statut status) {
 		this.status = status;
 	}
 
