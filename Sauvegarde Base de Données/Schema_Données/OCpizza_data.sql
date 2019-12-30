@@ -5,7 +5,7 @@
 -- Dumped from database version 12.1
 -- Dumped by pg_dump version 12.1
 
--- Started on 2019-12-22 18:31:29
+-- Started on 2019-12-30 19:01:03
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -28,6 +28,9 @@ INSERT INTO public.adresse (id, voie, complement, code_postal, commune) VALUES (
 INSERT INTO public.adresse (id, voie, complement, code_postal, commune) VALUES (2, '16 rue de la montée', '1 étage', 69580, 'Sathonay Village');
 INSERT INTO public.adresse (id, voie, complement, code_postal, commune) VALUES (3, '46 rue de la république', 'bat C', 69300, 'Caluire');
 INSERT INTO public.adresse (id, voie, complement, code_postal, commune) VALUES (4, '56 rue de la montée', '4 étages', 69300, 'caluire');
+INSERT INTO public.adresse (id, voie, complement, code_postal, commune) VALUES (5, '66 rue de la Ligote', '8 étages', 69500, 'Bron');
+INSERT INTO public.adresse (id, voie, complement, code_postal, commune) VALUES (6, '1 impasse de la vie', 'maison au fond de l''impasse', 69330, 'Meyzieu');
+INSERT INTO public.adresse (id, voie, complement, code_postal, commune) VALUES (7, '18 square marechal Lyautey', 'bat A', 69300, 'Caluire');
 
 
 --
@@ -41,6 +44,9 @@ INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creatio
 INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (3, 'Bernard', 'Eddy', '1981-05-25', '2019-12-22 18:12:12.96427', '0795852543', '0472659811', 2);
 INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (4, 'Dupont', 'Gerard', '1970-08-11', '2019-12-22 18:12:12.96427', '0658901143', '0478924233', 3);
 INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (5, 'Pacouret', 'Nathan', '1997-01-11', '2019-12-22 18:12:12.96427', '0790114943', '0472024225', 4);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (6, 'Rut', 'Sophie', '1980-01-16', '2019-12-29 10:20:29.36646', '0665729143', '0478880051', 5);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (7, 'Sita', 'Sheriff', '1963-02-12', '2019-12-29 10:20:29.36646', '0612096685', '0472413389', 6);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (8, 'Rodriguez', 'Philippe', '1979-05-24', '2019-12-29 10:20:29.36646', '0628465251', '0472235580', 7);
 
 
 --
@@ -49,6 +55,14 @@ INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creatio
 -- Data for Name: authentification; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public.authentification (id_utilisateur, username, password) VALUES (1, 'gerand', 'FranckieOC!!');
+INSERT INTO public.authentification (id_utilisateur, username, password) VALUES (2, 'LolaResp', 'responsable!OC69580!');
+INSERT INTO public.authentification (id_utilisateur, username, password) VALUES (3, 'respPDV', 'BErespLyon01?!');
+INSERT INTO public.authentification (id_utilisateur, username, password) VALUES (4, 'OCpizzaiolo', 'GegeDup25!');
+INSERT INTO public.authentification (id_utilisateur, username, password) VALUES (5, 'PacLiv', 'NathPacLiv69!');
+INSERT INTO public.authentification (id_utilisateur, username, password) VALUES (6, 'BelleSophie', 'LaMaisonDuCoin!!');
+INSERT INTO public.authentification (id_utilisateur, username, password) VALUES (7, 'Sheriff69', 'SITACpas?!');
+INSERT INTO public.authentification (id_utilisateur, username, password) VALUES (8, 'Phillipo69', 'RPPR!!25900');
 
 
 --
@@ -57,6 +71,14 @@ INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creatio
 -- Data for Name: categorie; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public.categorie (id, classe, sous_classe) VALUES ('1', 'pizza', 'base tomate');
+INSERT INTO public.categorie (id, classe, sous_classe) VALUES ('2', 'pizza', 'base crème');
+INSERT INTO public.categorie (id, classe, sous_classe) VALUES ('3', 'dessert', 'gateau');
+INSERT INTO public.categorie (id, classe, sous_classe) VALUES ('4', 'dessert', 'glace');
+INSERT INTO public.categorie (id, classe, sous_classe) VALUES ('5', 'dessert', 'flan');
+INSERT INTO public.categorie (id, classe, sous_classe) VALUES ('6', 'boisson', 'soda');
+INSERT INTO public.categorie (id, classe, sous_classe) VALUES ('7', 'boisson', 'alcool');
+INSERT INTO public.categorie (id, classe, sous_classe) VALUES ('8', 'boisson', 'chaude');
 
 
 --
@@ -65,6 +87,9 @@ INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creatio
 -- Data for Name: client; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public.client (id, numero, email, id_adresse_livraison) VALUES (6, 169500, 'rut.sophie69@yahoo.com', 5);
+INSERT INTO public.client (id, numero, email, id_adresse_livraison) VALUES (7, 269330, 'sheriff@gmail.com', 6);
+INSERT INTO public.client (id, numero, email, id_adresse_livraison) VALUES (8, 369300, 'rodriguodu69@laposte.net', 7);
 
 
 --
@@ -98,6 +123,9 @@ INSERT INTO public.employe (id, numero_employe, id_role) VALUES (5, 197016938000
 -- Data for Name: facture; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public.facture (id, numero, date, montant_ht, tva) VALUES (1, '0000012019', '2019-12-29 12:48:37.114296', 20.5, 10);
+INSERT INTO public.facture (id, numero, date, montant_ht, tva) VALUES (2, '0000022019', '2019-12-30 09:35:36.109472', 45.8, 10);
+INSERT INTO public.facture (id, numero, date, montant_ht, tva) VALUES (3, '0000032019', '2019-12-30 09:35:36.109472', 12.5, 10);
 
 
 --
@@ -206,7 +234,7 @@ INSERT INTO public.taille (id, taille, quantite_produit) VALUES (3, 'grande', 3)
 -- Name: adresse_id_adresse_seq_2; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.adresse_id_adresse_seq_2', 4, true);
+SELECT pg_catalog.setval('public.adresse_id_adresse_seq_2', 7, true);
 
 
 --
@@ -215,7 +243,7 @@ SELECT pg_catalog.setval('public.adresse_id_adresse_seq_2', 4, true);
 -- Name: categorie_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.categorie_id_seq_1', 1, false);
+SELECT pg_catalog.setval('public.categorie_id_seq_1', 8, true);
 
 
 --
@@ -251,7 +279,7 @@ SELECT pg_catalog.setval('public.etat_commande_statut_seq', 1, false);
 -- Name: facture_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.facture_id_seq_1', 1, false);
+SELECT pg_catalog.setval('public.facture_id_seq_1', 3, true);
 
 
 --
@@ -305,10 +333,10 @@ SELECT pg_catalog.setval('public.statut_id_seq_1', 1, false);
 -- Name: utilisateur_id_utilisateur_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.utilisateur_id_utilisateur_seq', 5, true);
+SELECT pg_catalog.setval('public.utilisateur_id_utilisateur_seq', 8, true);
 
 
--- Completed on 2019-12-22 18:31:29
+-- Completed on 2019-12-30 19:01:03
 
 --
 -- PostgreSQL database dump complete
