@@ -5,7 +5,7 @@
 -- Dumped from database version 12.1
 -- Dumped by pg_dump version 12.1
 
--- Started on 2020-01-03 21:03:50
+-- Started on 2020-01-07 15:49:56
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -178,6 +178,21 @@ INSERT INTO public.statut (id, code, description) VALUES (9, 'Commande finalisé
 -- Data for Name: etat_commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (1, 1, '2020-01-05 10:39:54.328195');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (2, 3, '2020-01-05 10:43:27.232906');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (3, 4, '2020-01-05 10:48:21.984073');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (4, 5, '2020-01-05 10:53:32.710949');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (5, 6, '2020-01-05 10:54:23.448512');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (6, 7, '2020-01-05 10:57:47.959906');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (7, 9, '2020-01-05 10:58:25.735091');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (8, 1, '2020-01-05 11:02:19.412597');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (9, 3, '2020-01-05 11:02:51.576348');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (10, 4, '2020-01-05 11:03:15.431238');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (11, 8, '2020-01-05 11:10:23.13793');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (12, 1, '2020-01-05 11:10:53.271714');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (13, 3, '2020-01-05 11:11:24.151632');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (14, 9, '2020-01-05 11:12:21.454223');
+INSERT INTO public.etat_commande (id, id_statut, date) VALUES (15, 2, '2020-01-05 11:12:27.434103');
 
 
 --
@@ -186,6 +201,21 @@ INSERT INTO public.statut (id, code, description) VALUES (9, 'Commande finalisé
 -- Data for Name: commande_etat_commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (1, 1, 1);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (2, 1, 2);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (3, 1, 3);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (4, 1, 4);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (5, 1, 5);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (6, 1, 6);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (7, 1, 7);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (8, 2, 8);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (9, 2, 9);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (10, 2, 10);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (11, 2, 11);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (12, 3, 12);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (13, 3, 13);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (14, 2, 14);
+INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VALUES (15, 3, 15);
 
 
 --
@@ -351,7 +381,7 @@ SELECT pg_catalog.setval('public.categorie_id_seq_1', 17, true);
 -- Name: commande_etat_commande_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.commande_etat_commande_id_seq', 1, false);
+SELECT pg_catalog.setval('public.commande_etat_commande_id_seq', 15, true);
 
 
 --
@@ -369,7 +399,7 @@ SELECT pg_catalog.setval('public.commande_numero_seq', 3, true);
 -- Name: etat_commande_statut_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.etat_commande_statut_seq', 1, false);
+SELECT pg_catalog.setval('public.etat_commande_statut_seq', 15, true);
 
 
 --
@@ -435,7 +465,7 @@ SELECT pg_catalog.setval('public.statut_id_seq_1', 1, false);
 SELECT pg_catalog.setval('public.utilisateur_id_utilisateur_seq', 8, true);
 
 
--- Completed on 2020-01-03 21:03:50
+-- Completed on 2020-01-07 15:49:56
 
 --
 -- PostgreSQL database dump complete

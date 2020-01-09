@@ -5,7 +5,7 @@
 -- Dumped from database version 12.1
 -- Dumped by pg_dump version 12.1
 
--- Started on 2020-01-03 21:04:57
+-- Started on 2020-01-07 15:49:07
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -1086,7 +1086,7 @@ ALTER TABLE ONLY public.employe
     ADD CONSTRAINT utilisateur_employe_fk FOREIGN KEY (id) REFERENCES public.utilisateur(id);
 
 
--- Completed on 2020-01-03 21:04:58
+-- Completed on 2020-01-07 15:49:07
 
 --
 -- PostgreSQL database dump complete

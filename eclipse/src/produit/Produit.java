@@ -1,29 +1,25 @@
 package produit;
 
-import java.text.DateFormat;
-
 public class Produit{
 	
 	private String referenceArticle;
-	private Double prixUnitaireHT;
-	private Double TVA;
-	private DateFormat dateDePeremption;
-	private Categorie categorie;
 	private String libelle;
 	private String composition;
-	private Pizza pizza;
+	private Double prixUnitaireHT;
+	private Double TVA;
+	private Categorie categorie;
+	private String unite;
 	
-	public Produit(String referenceArticle, Double prixUnitaireHT, Double tVA, DateFormat dateDePeremption,
-			Categorie categorie, String libelle, String composition, Pizza pizza) {
+	public Produit(String referenceArticle, String libelle, String composition, Double prixUnitaireHT, Double tVA,
+			Categorie categorie, String unite) {
 		super();
 		this.referenceArticle = referenceArticle;
-		this.prixUnitaireHT = prixUnitaireHT;
-		TVA = tVA;
-		this.dateDePeremption = dateDePeremption;
-		this.categorie = categorie;
 		this.libelle = libelle;
 		this.composition = composition;
-		this.pizza = pizza;
+		this.prixUnitaireHT = prixUnitaireHT;
+		TVA = tVA;
+		this.categorie = categorie;
+		this.unite = unite;
 	}
 
 	public String getReferenceArticle() {
@@ -32,38 +28,6 @@ public class Produit{
 
 	public void setReferenceArticle(String referenceArticle) {
 		this.referenceArticle = referenceArticle;
-	}
-
-	public Double getPrixUnitaireHT() {
-		return prixUnitaireHT;
-	}
-
-	public void setPrixUnitaireHT(Double prixUnitaireHT) {
-		this.prixUnitaireHT = prixUnitaireHT;
-	}
-
-	public Double getTVA() {
-		return TVA;
-	}
-
-	public void setTVA(Double tVA) {
-		TVA = tVA;
-	}
-
-	public DateFormat getDateDePeremption() {
-		return dateDePeremption;
-	}
-
-	public void setDateDePeremption(DateFormat dateDePeremption) {
-		this.dateDePeremption = dateDePeremption;
-	}
-
-	public Categorie getCategorie() {
-		return categorie;
-	}
-
-	public void setCategorie(Categorie categorie) {
-		this.categorie = categorie;
 	}
 
 	public String getLibelle() {
@@ -82,20 +46,44 @@ public class Produit{
 		this.composition = composition;
 	}
 
-	public Pizza getPizza() {
-		return pizza;
+	public Double getPrixUnitaireHT() {
+		return prixUnitaireHT;
 	}
 
-	public void setPizza(Pizza pizza) {
-		this.pizza = pizza;
+	public void setPrixUnitaireHT(Double prixUnitaireHT) {
+		this.prixUnitaireHT = prixUnitaireHT;
+	}
+
+	public Double getTVA() {
+		return TVA;
+	}
+
+	public void setTVA(Double tVA) {
+		TVA = tVA;
+	}
+
+	public Categorie getCategorie() {
+		return categorie;
+	}
+
+	public void setCategorie(Categorie categorie) {
+		this.categorie = categorie;
+	}
+
+	public String getUnite() {
+		return unite;
+	}
+
+	public void setUnite(String unite) {
+		this.unite = unite;
 	}
 
 	@Override
 	public String toString() {
-		return "Produit [referenceArticle=" + referenceArticle + ", prixUnitaireHT=" + prixUnitaireHT + ", TVA=" + TVA
-				+ ", dateDePeremption=" + dateDePeremption + ", categorie=" + categorie + ", libelle=" + libelle
-				+ ", composition=" + composition + ", pizza=" + pizza + "]";
-	}
+		return "Produit [referenceArticle=" + referenceArticle + ", libelle=" + libelle + ", composition=" + composition
+				+ ", prixUnitaireHT=" + prixUnitaireHT + ", TVA=" + TVA + ", categorie=" + categorie + ", unite="
+				+ unite + "]";
+	}		
 	
-			
+				
 }

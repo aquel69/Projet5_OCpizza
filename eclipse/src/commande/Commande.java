@@ -11,17 +11,15 @@ public class Commande {
 	private String numero;                 
 	private Employe vendeur;               
 	private DateFormat dateEnregistrement;               
-	private Facture facture;  
 	private PointDeVente siret;
 	private Adresses adresseDeLivraison;
 	
-	public Commande(String numero, Employe vendeur, DateFormat dateEnregistrement, Facture facture, PointDeVente siret,
+	public Commande(String numero, Employe vendeur, DateFormat dateEnregistrement, PointDeVente siret,
 			Adresses adresseDeLivraison) {
 		super();
 		this.numero = numero;
 		this.vendeur = vendeur;
 		this.dateEnregistrement = dateEnregistrement;
-		this.facture = facture;
 		this.siret = siret;
 		this.adresseDeLivraison = adresseDeLivraison;
 	}
@@ -50,14 +48,7 @@ public class Commande {
 		this.dateEnregistrement = dateEnregistrement;
 	}
 
-	public Facture getFacture() {
-		return facture;
-	}
-
-	public void setFacture(Facture facture) {
-		this.facture = facture;
-	}
-
+	
 	public PointDeVente getSiret() {
 		return siret;
 	}
@@ -77,7 +68,7 @@ public class Commande {
 	@Override
 	public String toString() {
 		return "Commande [numero=" + numero + ", vendeur=" + vendeur + ", dateEnregistrement=" + dateEnregistrement
-				+ ", facture=" + facture + ", siret=" + siret + ", adresseDeLivraison=" + adresseDeLivraison + "]";
+				+ ", siret=" + siret + ", adresseDeLivraison=" + adresseDeLivraison + "]";
 	}
 	
 				

@@ -1,51 +1,34 @@
 package produit;
 
-public class Pizza {
+public enum Pizza {
 	
+	margherita(1, "margherita"),
+	regina(2, "regina"),
+	reine(3, "reine"),
+	norvegienne(4, "norvegienne");
+	
+	private int id;
 	private String nom;
-	private String description;
-	private Produit ingredient;
-	private Taille taille;
 	
-	public Pizza(String nom, String description, Produit ingredient, Taille taille) {
-		super();
+	private Pizza(int id, String nom) {
+		this.id = id;
 		this.nom = nom;
-		this.description = description;
-		this.ingredient = ingredient;
-		this.taille = taille;
 	}
-	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getNom() {
 		return nom;
 	}
+
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	public String getDescritpion() {
-		return description;
-	}
-	public void setDescritpion(String descritpion) {
-		this.description = descritpion;
-	}
-	public Produit getIngredient() {
-		return ingredient;
-	}
-	public void setIngredient(Produit ingredient) {
-		this.ingredient = ingredient;
-	}
-	public Taille getTaille() {
-		return taille;
-	}
-	public void setTaille(Taille taille) {
-		this.taille = taille;
-	}
-	
-	@Override
-	public String toString() {
-		return "Pizza [nom=" + nom + ", description=" + description + ", Ingredient=" + ingredient + ", taille="
-				+ taille + "]";
-	}
-	
-	
-	
+			
 }

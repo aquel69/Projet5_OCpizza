@@ -1,6 +1,5 @@
 # PROJET 5 - Concevez la solution technique d’un système de gestion de pizzeria 
-____  
-
+___  
 
 ## Diagramme de Classe
 
@@ -78,8 +77,11 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 	
 ![photo création de la base de données 5](créationBaseDeDonnées5.png "création de la base de données 5")  
 	&nbsp;  
+6. J'ai également installé le plug-in DTP pour éclipse, me permettant d'avoir accés au base de données via le logiciel.   
+	&nbsp;  
+![photo création de la base de données 6](créationBaseDeDonnées6.png "création de la base de données 6") 
 	
-## Sauvegarder un Schéma ou des données
+## Sauvegarder un Schéma ou des données dans PgAdmin4
 1. Dans pgAdmin4, je selectionne 'Outils' dans la barre de menu, puis 'Sauvegarder' dans le menu déroulant. Je vais commencer par sauvegarder le schéma.
 2. La fenêtre Backup s'affiche, dans l'onglet 'General', je clique sur le nom de fichier et donne un nom à mon fichier en s'assurant de mettre l'extension .sql à la fin.  
 	&nbsp;  
@@ -93,4 +95,15 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 	&nbsp;  
 ![photo Sauvegarde 3](Sauvegarde3.png "Sauvegarde 3")  
 	&nbsp;  
-5. La sauvegarde de mon schéma est crée. Je répète le même processus pour les données, en retirant juste le type 'Shéma uniquement' et en mettant à la place 'Données uniquement' sur 'yes' dans 'Options de sauvegarde'.
+5. La sauvegarde de mon schéma est crée. Je répète le même processus pour les données, en retirant juste le type 'Shéma uniquement' et en mettant à la place 'Données uniquement' sur 'yes' dans 'Options de sauvegarde'.  
+	&nbsp;
+	
+## Diagramme de Composants et de Déploiement
+1. Le Diagramme de composants est un diagramme qui représente plusieurs composant inclus dans des sous-système qui relié entre eux represente le système global. Un composant est un élément logiciel remplaçable et réutilisable qui fourni ou reçoit unservice bien précis. Il peut être vu comme une pièce détachée du logiciel. Voici celui représentant le système global d'"OC Pizza" :  
+	&nbsp;
+![photo Diagramme de Composants](DiagrammeDeComposants.png "Diagramme de Composants")  
+	&nbsp;
+2. Le Diagramme de Déploiement décrit un aspect du système même. Il affiche la configuration des éléments matériels (noeuds) et affiche comment des éléments logiciels et des artefacts sont mappés sur ces noeuds. Voici celui représentant le système global d'"OC Pizza" :  
+	&nbsp;
+![photo Diagramme de Déploiement](DiagrammeDeDeploiement.png "Diagramme de Déploiement")  
+

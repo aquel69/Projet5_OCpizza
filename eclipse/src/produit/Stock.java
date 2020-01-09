@@ -6,15 +6,19 @@ public class Stock {
 	
 	private Produit produitDeBase;
 	private String codeEAN;
-	private int quantite;
+	private int quantiteRestante;
 	private DateFormat dateAchat;
+	private DateFormat dateDePeremption;
 	
-	public Stock(Produit produitDeBase, String codeEAN, int quantite, DateFormat dateAchat) {
+	
+	public Stock(Produit produitDeBase, String codeEAN, int quantiteRestante, DateFormat dateAchat,
+			DateFormat dateDePeremption) {
 		super();
 		this.produitDeBase = produitDeBase;
 		this.codeEAN = codeEAN;
-		this.quantite = quantite;
+		this.quantiteRestante = quantiteRestante;
 		this.dateAchat = dateAchat;
+		this.dateDePeremption = dateDePeremption;
 	}
 
 	public Produit getProduitDeBase() {
@@ -34,11 +38,11 @@ public class Stock {
 	}
 
 	public int getQuantite() {
-		return quantite;
+		return quantiteRestante;
 	}
 
-	public void setQuantite(int quantite) {
-		this.quantite = quantite;
+	public void setQuantite(int quantiteRestante) {
+		this.quantiteRestante = quantiteRestante;
 	}
 
 	public DateFormat getDateAchat() {
@@ -48,12 +52,22 @@ public class Stock {
 	public void setDateAchat(DateFormat dateAchat) {
 		this.dateAchat = dateAchat;
 	}
+	
+	public DateFormat getDateDePeremption() {
+		return dateDePeremption;
+	}
+
+	public void setDateDePeremption(DateFormat dateDePeremption) {
+		this.dateDePeremption = dateDePeremption;
+	}
+	
 
 	@Override
 	public String toString() {
-		return "Stock [produitDeBase=" + produitDeBase + ", codeEAN=" + codeEAN + ", quantite=" + quantite
-				+ ", dateAchat=" + dateAchat + "]";
+		return "Stock [produitDeBase=" + produitDeBase + ", codeEAN=" + codeEAN + ", quantiteRestante=" + quantiteRestante
+				+ ", dateAchat=" + dateAchat + ", dateDePeremption=" + dateDePeremption + "]";
 	}
+
 	
 		
 }

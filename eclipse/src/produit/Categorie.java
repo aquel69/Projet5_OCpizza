@@ -2,11 +2,14 @@ package produit;
 
 public class Categorie {
 	
-	String classe;
-	String sousClasse;
-		
-	public Categorie(String classe, String sousClasse) {
+	private String categorie;
+	private String classe;
+	private String sousClasse;
+	
+	
+	public Categorie(String categorie, String classe, String sousClasse) {
 		super();
+		this.categorie = categorie;
 		this.classe = classe;
 		this.sousClasse = sousClasse;
 	}
@@ -26,11 +29,18 @@ public class Categorie {
 	public void setSousClasse(String sousClasse) {
 		this.sousClasse = sousClasse;
 	}
-
 	
+	public String getCategorie() {
+		return categorie;
+	}
+
+	public void setCategorie(String categorie) {
+		this.categorie = categorie;
+	}
+
 	@Override
 	public String toString() {
-		return "Categorie [classe=" + classe + ", sousClasse=" + sousClasse + "]";
+		return "Categorie [categorie=" + categorie + ", classe=" + classe + ", sousClasse=" + sousClasse + "]";
 	}
 	
 		

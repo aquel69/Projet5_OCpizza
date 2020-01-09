@@ -8,12 +8,12 @@ public enum Taille {
 	
 	private int id;
 	private String taille;
-	private int quantite;
+	private int facteurQuantite;
 	
-	private Taille(int id, String taille, int quantite) {
+	private Taille(int id, String taille, int facteurQuantite) {
 		this.id = id;
 		this.taille = taille;
-		this.quantite = quantite;
+		this.facteurQuantite = facteurQuantite;
 	}
 
 	public int getId() {
@@ -33,11 +33,11 @@ public enum Taille {
 	}
 
 	public int getQuantite() {
-		return quantite;
+		return facteurQuantite;
 	}
 
 	public void setQuantite(int quantite) {
-		this.quantite = quantite;
+		this.facteurQuantite = quantite;
 	}
 	
 			

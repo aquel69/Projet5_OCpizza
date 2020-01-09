@@ -42,7 +42,7 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 
 5. Je créé sur le logiciel "Visio" un diagramme à partir de celui généré sur Eclipse. Celui-ci est plus complet et plus présentable.  
 	&nbsp;  
-![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/71312464-36cbc280-2423-11ea-8ea0-24f10fed48fd.png)
+![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/72070117-a9241a00-32e0-11ea-90b0-c6f55cdf1659.png)
 	&nbsp;  
 
 
@@ -53,7 +53,7 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 2. J'ajoute ensuite les différentes clés primaires et étrangères de chaque table.  
 	&nbsp;
 3. J'obtiens le résultat suivant :  
-![MPD](https://user-images.githubusercontent.com/45402044/71312061-b30fd700-241e-11ea-879c-be9b9f7eeab0.png)
+![MPD](https://user-images.githubusercontent.com/45402044/72070318-2cde0680-32e1-11ea-9900-5f1259505521.png)
 	&nbsp;  
 
 
@@ -76,11 +76,14 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 	&nbsp;  
 5. Je clique sur l'icone éclair(1), la partie 'Editeur de requêtes' s'affiche. Je colle le code crée en SQL sur "Power Architect" dans cette partie et valide à l'aide de l'icone éclaire(2). Les tables du groupe "OC Pizza" sont maintenant dans la base données.
 	&nbsp;  
-	
 ![créationBaseDeDonnées5](https://user-images.githubusercontent.com/45402044/71312107-37faf080-241f-11ea-8cb4-7f3734d1d59e.png)  
   	&nbsp;  
- 
- ## Sauvegarder un Schéma ou des données
+ 6. J'ai également installé le plug-in DTP pour éclipse, me permettant d'avoir accés au base de données via le logiciel.   
+	&nbsp;  
+![créationBaseDeDonnées6](https://user-images.githubusercontent.com/45402044/72078394-ea242a80-32f0-11ea-8194-37a63cdf4d79.png)  
+	&nbsp;  
+	
+ ## Sauvegarder un Schéma ou des données dans PgAdmin4
 1. Dans pgAdmin4, je selectionne 'Outils' dans la barre de menu, puis 'Sauvegarder' dans le menu déroulant. Je vais commencer par sauvegarder le schéma.
 2. La fenêtre Backup s'affiche, dans l'onglet 'General', je clique sur le nom de fichier et donne un nom à mon fichier en s'assurant de mettre l'extension .sql à la fin.  
 	&nbsp;  
@@ -95,3 +98,13 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 ![Sauvegarde3](https://user-images.githubusercontent.com/45402044/71320827-ea2aca80-24a8-11ea-9ae5-af11291bc744.png)
  	&nbsp;  
 5. La sauvegarde de mon schéma est crée. Je répète le même processus pour les données, en retirant juste le type 'Shéma uniquement' et en mettant à la place 'Données uniquement' sur 'yes' dans 'Options de sauvegarde'.
+	&nbsp;
+
+## Diagramme de Composants et de Déploiement
+1. Le Diagramme de composants est un diagramme qui représente plusieurs composant inclus dans des sous-système qui relié entre eux represente le système global. Un composant est un élément logiciel remplaçable et réutilisable qui fourni ou reçoit unservice bien précis. Il peut être vu comme une pièce détachée du logiciel. Voici celui représentant le système global d'"OC Pizza" :  
+	&nbsp;
+![DiagrammeDeComposants](https://user-images.githubusercontent.com/45402044/72075605-06719880-32ec-11ea-99cb-3b3ef16810fb.png) 
+	&nbsp;
+2. Le Diagramme de Déploiement décrit un aspect du système même. Il affiche la configuration des éléments matériels (noeuds) et affiche comment des éléments logiciels et des artefacts sont mappés sur ces noeuds. Voici celui représentant le système global d'"OC Pizza" :  
+	&nbsp;
+![DiagrammeDeDeploiement](https://user-images.githubusercontent.com/45402044/72075679-25702a80-32ec-11ea-8dd4-ac4023840638.png)  

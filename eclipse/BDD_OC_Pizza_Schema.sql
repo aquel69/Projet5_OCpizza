@@ -1,1 +1,1 @@
-SELECT * FROM adresse
+SELECT * FROM produit
