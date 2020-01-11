@@ -1,7 +1,6 @@
-SELECT * FROM client AS cli, utilisateur AS usr
-WHERE cli.id = usr.id
-
-SELECT * FROM utilisateur
+SELECT numero, email, id_adresse_livraison
+FROM client
+WHERE id = 6 OR id = 7
 
 INSERT INTO client
 VALUES (6, 0000169500, 'rut.sophie69@yahoo.com' ,5),

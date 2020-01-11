@@ -1,4 +1,4 @@
-SELECT nom, prenom, to_char(date_de_naissance, 'dd-mm-yyyy') AS date_de_naissance, to_char(date_creation_de_compte, 'dd-mm-yyyy hh24:mi:ss') AS date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe
+SELECT nom, prenom, to_char(date_de_naissance, 'dd-mm-yyyy') AS date_de_naissance, to_char(date_creation_de_compte, 'dd-mm-yyyy hh24:mi:ss') AS date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale
 FROM utilisateur
 
 INSERT INTO utilisateur(nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe,id_adresse_postale)

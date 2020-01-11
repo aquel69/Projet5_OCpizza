@@ -1,4 +1,6 @@
-SELECT * FROM authentification
+SELECT username, password 
+FROM authentification
+WHERE id_utilisateur = 6 OR id_utilisateur = 7;
 
 INSERT INTO authentification
 VALUES (1, 'gerand', 'FranckieOC!!' ),
