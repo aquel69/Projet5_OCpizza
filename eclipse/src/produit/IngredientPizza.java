@@ -15,7 +15,14 @@ public enum IngredientPizza {
 	tomate2("regina", "tomate", 80),
 	sauceTomate2("regina", "sauce tomate", 150),
 	melangeHerbe2("regina", "melange Herbe", 1),
-	olive2("regina", "olive", 3);
+	olive2("regina", "olive", 3),
+	mozzarella4("norvegienne", "mozzarella", 80),
+	paton4("norvegienne", "paton", 1),
+	tomate4("norvegienne", "tomate", 80),
+	sauceTomate4("norvegienne", "sauce tomate", 150),
+	melangeHerbe4("norvegienne", "melange Herbe", 1),
+	olive4("norvegienne", "olive", 3),
+	saumon4("norvegienne", "saumon", 60);
 	 	
 	private String pizza;
 	private String produit;
