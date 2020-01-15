@@ -9,16 +9,15 @@ public class Client extends Utilisateurs{
 	
 	protected String numero;
 	protected Adresses adresseLivraison;
-	protected String eMail;
-			
+				
+	
 	public Client(String nom, String prenom, DateFormat dateDeNaissance, DateFormat dateDeCreationDeCompte,
-			Adresses adressePostale, int numeroTelephoneMobile, int numeroTelephoneFixe, String numero,
-			Adresses adresseLivraison, String eMail) {
+			Adresses adressePostale, int numeroTelephoneMobile, int numeroTelephoneFixe, String email, int type,
+			String numero, Adresses adresseLivraison) {
 		super(nom, prenom, dateDeNaissance, dateDeCreationDeCompte, adressePostale, numeroTelephoneMobile,
-				numeroTelephoneFixe);
+				numeroTelephoneFixe, email, type);
 		this.numero = numero;
 		this.adresseLivraison = adresseLivraison;
-		this.eMail = eMail;
 	}
 
 
@@ -41,19 +40,10 @@ public class Client extends Utilisateurs{
 	}
 
 
-	public String geteMail() {
-		return eMail;
-	}
-
-
-	public void seteMail(String eMail) {
-		this.eMail = eMail;
-	}
-
 
 	@Override
 	public String toString() {
-		return "Client [numero=" + numero + ", adresseLivraison=" + adresseLivraison + ", eMail=" + eMail + "]";
+		return "Client [numero=" + numero + ", adresseLivraison=" + adresseLivraison +  "]";
 	}
 	
 		

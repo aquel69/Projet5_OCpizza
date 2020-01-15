@@ -8,11 +8,13 @@ public class Employe extends Utilisateurs {
 	
 	protected int numeroEmploye;
 	protected Role role;
-		
+	
+	
 	public Employe(String nom, String prenom, DateFormat dateDeNaissance, DateFormat dateDeCreationDeCompte,
-			Adresses adressePostale, int numeroTelephoneMobile, int numeroTelephoneFixe, int numeroEmploye, Role role) {
+			Adresses adressePostale, int numeroTelephoneMobile, int numeroTelephoneFixe, String email, int type,
+			int numeroEmploye, Role role) {
 		super(nom, prenom, dateDeNaissance, dateDeCreationDeCompte, adressePostale, numeroTelephoneMobile,
-				numeroTelephoneFixe);
+				numeroTelephoneFixe, email, type);
 		this.numeroEmploye = numeroEmploye;
 		this.role = role;
 	}

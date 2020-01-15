@@ -13,9 +13,11 @@ public class Utilisateurs {
 	protected Adresses adressePostale;
 	protected int numeroTelephoneMobile;
 	protected int numeroTelephoneFixe;
+	protected String email;
+	protected int type;
 	
 	public Utilisateurs(String nom, String prenom, DateFormat dateDeNaissance, DateFormat dateDeCreationDeCompte,
-			Adresses adressePostale, int numeroTelephoneMobile, int numeroTelephoneFixe) {
+			Adresses adressePostale, int numeroTelephoneMobile, int numeroTelephoneFixe, String email, int type) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
@@ -24,6 +26,8 @@ public class Utilisateurs {
 		this.adressePostale = adressePostale;
 		this.numeroTelephoneMobile = numeroTelephoneMobile;
 		this.numeroTelephoneFixe = numeroTelephoneFixe;
+		this.email = email;
+		this.type = type;
 	}
 
 	public String getNom() {
@@ -82,13 +86,29 @@ public class Utilisateurs {
 		this.numeroTelephoneFixe = numeroTelephoneFixe;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
 	@Override
 	public String toString() {
 		return "Utilisateurs [nom=" + nom + ", prenom=" + prenom + ", dateDeNaissance=" + dateDeNaissance
 				+ ", dateDeCreationDeCompte=" + dateDeCreationDeCompte + ", adressePostale=" + adressePostale
 				+ ", numeroTelephoneMobile=" + numeroTelephoneMobile + ", numeroTelephoneFixe=" + numeroTelephoneFixe
-				+ "]";
+				+ ", email=" + email + ", type=" + type + "]";
 	}
-			
+		
 	
 }

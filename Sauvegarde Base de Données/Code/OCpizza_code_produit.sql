@@ -1,4 +1,4 @@
-SELECT reference_article, libelle, composition, prix_unitaire_ht , tva, id_categorie, unite FROM produit
+SELECT id, reference_article, libelle, composition, prix_unitaire_ht , tva, id_categorie, unite FROM produit
 
 SELECT * FROM categorie
 INNER JOIN produit ON produit.id_categorie = categorie.id
@@ -12,8 +12,8 @@ DELETE FROM produit
 ALTER SEQUENCE produit_id_seq_1 RESTART 1
 
 UPDATE produit
-SET composition = 'sauce tomate spécial pizza, pot de 1L'
-WHERE id = 6;
+SET libelle = 'moyenne pizza regina'
+WHERE id = 20;
 
 
 INSERT INTO produit(reference_article, libelle, composition, prix_unitaire_ht, id_categorie, unite)
