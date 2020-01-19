@@ -42,7 +42,7 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 
 5. Je créé sur le logiciel "Visio" un diagramme à partir de celui généré sur Eclipse. Celui-ci est plus complet et plus présentable.  
 	&nbsp;  
-![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/72426406-89c63a80-3781-11ea-8733-d30c506753ff.png)
+![DiagrammeDeClasse](https://user-images.githubusercontent.com/45402044/72678519-922eb600-3a9e-11ea-879f-b9e3a47a88cd.png)
 	&nbsp;  
 
 
@@ -53,7 +53,7 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 2. J'ajoute ensuite les différentes clés primaires et étrangères de chaque table.  
 	&nbsp;
 3. J'obtiens le résultat suivant :  
-![MPD](https://user-images.githubusercontent.com/45402044/72426470-a9f5f980-3781-11ea-80d0-f672fc973f8a.png)
+![MPD](https://user-images.githubusercontent.com/45402044/72678541-d0c47080-3a9e-11ea-8a83-0f1e3106f27d.png)
 	&nbsp;  
 
 

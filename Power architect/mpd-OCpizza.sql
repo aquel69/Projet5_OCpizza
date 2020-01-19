@@ -12,10 +12,10 @@ CREATE TABLE public.statut (
 ALTER SEQUENCE public.statut_id_seq_1 OWNED BY public.statut.id;
 
 CREATE TABLE public.taille (
-                id_taille NUMERIC NOT NULL,
+                id NUMERIC NOT NULL,
                 taille VARCHAR NOT NULL,
                 facteur_quantite NUMERIC NOT NULL,
-                CONSTRAINT taille_pk PRIMARY KEY (id_taille)
+                CONSTRAINT taille_pk PRIMARY KEY (id)
 );
 
 
@@ -24,7 +24,6 @@ CREATE SEQUENCE public.pizza_id_seq_2_1_1;
 CREATE TABLE public.pizza (
                 id NUMERIC NOT NULL DEFAULT nextval('public.pizza_id_seq_2_1_1'),
                 nom VARCHAR NOT NULL,
-                id_taille NUMERIC NOT NULL,
                 CONSTRAINT pizza_pk PRIMARY KEY (id)
 );
 
@@ -75,6 +74,7 @@ CREATE TABLE public.ingredient_pizza (
                 id_pizza NUMERIC NOT NULL,
                 id_produit NUMERIC NOT NULL,
                 quantite NUMERIC NOT NULL,
+                facteur_quantite NUMERIC NOT NULL,
                 CONSTRAINT ingredient_pizza_pk PRIMARY KEY (id)
 );
 
@@ -245,9 +245,9 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
-ALTER TABLE public.pizza ADD CONSTRAINT taille_pizza_fk
-FOREIGN KEY (id_taille)
-REFERENCES public.taille (id_taille)
+ALTER TABLE public.ingredient_pizza ADD CONSTRAINT taille_ingredient_pizza_fk
+FOREIGN KEY (facteur_quantite)
+REFERENCES public.taille (id)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;

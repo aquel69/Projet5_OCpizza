@@ -3,9 +3,9 @@
 --
 
 -- Dumped from database version 12.1
--- Dumped by pg_dump version 12.1
+-- Dumped by pg_dump version 12.0
 
--- Started on 2020-01-07 15:49:56
+-- Started on 2020-01-19 10:30:44
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,7 +19,7 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- TOC entry 3020 (class 0 OID 33688)
+-- TOC entry 3021 (class 0 OID 33688)
 -- Dependencies: 217
 -- Data for Name: adresse; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -39,23 +39,23 @@ INSERT INTO public.adresse (id, voie, complement, code_postal, commune) VALUES (
 
 
 --
--- TOC entry 3024 (class 0 OID 33715)
+-- TOC entry 3025 (class 0 OID 33715)
 -- Dependencies: 221
 -- Data for Name: utilisateur; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (1, 'Giroud', 'Franck', '1976-10-20', '2019-12-22 18:12:12.96427', '0625336459', '0478905896', 1);
-INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (2, 'Giroud', 'Lola', '1978-11-10', '2019-12-22 18:12:12.96427', '0789436521', '0478905896', 1);
-INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (3, 'Bernard', 'Eddy', '1981-05-25', '2019-12-22 18:12:12.96427', '0795852543', '0472659811', 2);
-INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (4, 'Dupont', 'Gerard', '1970-08-11', '2019-12-22 18:12:12.96427', '0658901143', '0478924233', 3);
-INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (5, 'Pacouret', 'Nathan', '1997-01-11', '2019-12-22 18:12:12.96427', '0790114943', '0472024225', 4);
-INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (6, 'Rut', 'Sophie', '1980-01-16', '2019-12-29 10:20:29.36646', '0665729143', '0478880051', 5);
-INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (7, 'Sita', 'Sheriff', '1963-02-12', '2019-12-29 10:20:29.36646', '0612096685', '0472413389', 6);
-INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale) VALUES (8, 'Rodriguez', 'Philippe', '1979-05-24', '2019-12-29 10:20:29.36646', '0628465251', '0472235580', 7);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale, email, type) VALUES (1, 'Giroud', 'Franck', '1976-10-20', '2019-12-22 18:12:12.96427', '0625336459', '0478905896', 1, 'franck.giroud@ocpizza.fr', 1);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale, email, type) VALUES (2, 'Giroud', 'Lola', '1978-11-10', '2019-12-22 18:12:12.96427', '0789436521', '0478905896', 1, 'lola.giroud@ocpizza.fr', 1);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale, email, type) VALUES (3, 'Bernard', 'Eddy', '1981-05-25', '2019-12-22 18:12:12.96427', '0795852543', '0472659811', 2, 'eddy.bernard@ocpizza.fr', 2);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale, email, type) VALUES (4, 'Dupont', 'Gerard', '1970-08-11', '2019-12-22 18:12:12.96427', '0658901143', '0478924233', 3, 'gerard.dupont@ocpizza.fr', 3);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale, email, type) VALUES (5, 'Pacouret', 'Nathan', '1997-01-11', '2019-12-22 18:12:12.96427', '0790114943', '0472024225', 4, 'nathan.pacouret@ocpizza.fr', 4);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale, email, type) VALUES (6, 'Rut', 'Sophie', '1980-01-16', '2019-12-29 10:20:29.36646', '0665729143', '0478880051', 5, 'rut.sophie69@yahoo.com', 5);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale, email, type) VALUES (7, 'Sita', 'Sheriff', '1963-02-12', '2019-12-29 10:20:29.36646', '0612096685', '0472413389', 6, 'sheriff@gmail.com', 5);
+INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale, email, type) VALUES (8, 'Rodriguez', 'Philippe', '1979-05-24', '2019-12-29 10:20:29.36646', '0628465251', '0472235580', 7, 'rodriguodu69@laposte.net', 5);
 
 
 --
--- TOC entry 3033 (class 0 OID 33773)
+-- TOC entry 3034 (class 0 OID 33773)
 -- Dependencies: 230
 -- Data for Name: authentification; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -71,7 +71,7 @@ INSERT INTO public.authentification (id_utilisateur, username, password) VALUES 
 
 
 --
--- TOC entry 3009 (class 0 OID 33614)
+-- TOC entry 3010 (class 0 OID 33614)
 -- Dependencies: 206
 -- Data for Name: categorie; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -96,18 +96,18 @@ INSERT INTO public.categorie (id, classe, sous_classe, "catégorie") VALUES ('17
 
 
 --
--- TOC entry 3032 (class 0 OID 33765)
+-- TOC entry 3033 (class 0 OID 33765)
 -- Dependencies: 229
 -- Data for Name: client; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.client (id, numero, email, id_adresse_livraison) VALUES (6, 169500, 'rut.sophie69@yahoo.com', 5);
-INSERT INTO public.client (id, numero, email, id_adresse_livraison) VALUES (7, 269330, 'sheriff@gmail.com', 6);
-INSERT INTO public.client (id, numero, email, id_adresse_livraison) VALUES (8, 369300, 'rodriguodu69@laposte.net', 7);
+INSERT INTO public.client (id, numero, id_adresse_livraison) VALUES (6, 169500, 5);
+INSERT INTO public.client (id, numero, id_adresse_livraison) VALUES (7, 269330, 6);
+INSERT INTO public.client (id, numero, id_adresse_livraison) VALUES (8, 369300, 7);
 
 
 --
--- TOC entry 3022 (class 0 OID 33705)
+-- TOC entry 3023 (class 0 OID 33705)
 -- Dependencies: 219
 -- Data for Name: role; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -119,7 +119,7 @@ INSERT INTO public.role (id, role, description) VALUES (4, 'livreur', 'Le livreu
 
 
 --
--- TOC entry 3025 (class 0 OID 33724)
+-- TOC entry 3026 (class 0 OID 33724)
 -- Dependencies: 222
 -- Data for Name: employe; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -132,7 +132,7 @@ INSERT INTO public.employe (id, numero_employe, id_role) VALUES (5, 197016938000
 
 
 --
--- TOC entry 3021 (class 0 OID 33697)
+-- TOC entry 3022 (class 0 OID 33697)
 -- Dependencies: 218
 -- Data for Name: point_de_vente; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -145,7 +145,7 @@ INSERT INTO public.point_de_vente (siret, id_adresse_du_site) VALUES (8029547850
 
 
 --
--- TOC entry 3027 (class 0 OID 33734)
+-- TOC entry 3028 (class 0 OID 33734)
 -- Dependencies: 224
 -- Data for Name: commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -153,10 +153,12 @@ INSERT INTO public.point_de_vente (siret, id_adresse_du_site) VALUES (8029547850
 INSERT INTO public.commande (id, numero, date_enregistrement, id_adresse_de_livraison, id_employe, siret) VALUES (1, 2020000001, '2020-01-03 20:45:16.972188', 5, 3, 80295478500003);
 INSERT INTO public.commande (id, numero, date_enregistrement, id_adresse_de_livraison, id_employe, siret) VALUES (2, 2020000002, '2020-01-03 20:45:16.972188', 6, 3, 80295478500003);
 INSERT INTO public.commande (id, numero, date_enregistrement, id_adresse_de_livraison, id_employe, siret) VALUES (3, 2020000003, '2020-01-03 20:45:16.972188', 7, 3, 80295478500003);
+INSERT INTO public.commande (id, numero, date_enregistrement, id_adresse_de_livraison, id_employe, siret) VALUES (4, 2020000004, '2020-01-13 10:54:56.920571', 5, 3, 80295478500003);
+INSERT INTO public.commande (id, numero, date_enregistrement, id_adresse_de_livraison, id_employe, siret) VALUES (5, 2020000005, '2020-01-13 10:54:56.920571', 6, 3, 80295478500003);
 
 
 --
--- TOC entry 3006 (class 0 OID 33595)
+-- TOC entry 3007 (class 0 OID 33595)
 -- Dependencies: 203
 -- Data for Name: statut; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -173,7 +175,7 @@ INSERT INTO public.statut (id, code, description) VALUES (9, 'Commande finalisé
 
 
 --
--- TOC entry 3016 (class 0 OID 33666)
+-- TOC entry 3017 (class 0 OID 33666)
 -- Dependencies: 213
 -- Data for Name: etat_commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -196,7 +198,7 @@ INSERT INTO public.etat_commande (id, id_statut, date) VALUES (15, 2, '2020-01-0
 
 
 --
--- TOC entry 3029 (class 0 OID 33745)
+-- TOC entry 3030 (class 0 OID 33745)
 -- Dependencies: 226
 -- Data for Name: commande_etat_commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -219,7 +221,7 @@ INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VA
 
 
 --
--- TOC entry 3018 (class 0 OID 33677)
+-- TOC entry 3019 (class 0 OID 33677)
 -- Dependencies: 215
 -- Data for Name: facture; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -227,7 +229,7 @@ INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VA
 
 
 --
--- TOC entry 3013 (class 0 OID 33636)
+-- TOC entry 3014 (class 0 OID 33636)
 -- Dependencies: 210
 -- Data for Name: pizza; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -239,7 +241,7 @@ INSERT INTO public.pizza (id, nom) VALUES (4, 'norvégienne');
 
 
 --
--- TOC entry 3011 (class 0 OID 33625)
+-- TOC entry 3012 (class 0 OID 33625)
 -- Dependencies: 208
 -- Data for Name: produit; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -262,37 +264,55 @@ INSERT INTO public.produit (id, reference_article, libelle, composition, prix_un
 INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (17, '00001VENDESGAT', 'tiramisu', 'tiramisu à l''unité', 4.8, 10, '3', 'part');
 INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (18, '00001VENDESFLA', 'crème brulée', 'ramequin de crème brulée à l''unité', 5.3, 10, '5', 'part');
 INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (19, '00001VENDESGLA', 'magnum chocolat', 'glace magnum chocolat à l''unité', 3.5, 10, '4', 'piece');
-INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (20, '00001VENPIZTOM', 'pizza jambon', 'pizza base tomate, jambon et mozzarela à l''unité', 9.5, 10, '1', 'piece');
-INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (21, '00001VENPIZCRE', 'pizza jambon', 'pizza saumon base crème, saumon à l''unité', 12.5, 10, '2', 'piece');
 INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (6, '00001ACHINGSAU', 'sauce tomate', 'sauce tomate spécial pizza, pot de 1L', 3.2, NULL, '13', 'millilitre');
 INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (22, '00002ACHINGSAU', 'crème fraiche', 'crème fraiche 30%, pot de 5L', 14.69, NULL, '13', 'millilitre');
 INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (23, '00003ACHINGPRE', 'mozzarella', 'mozzarella en cossette de 2,5kg', 12.47, NULL, '14', 'gramme');
 INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (24, '00004ACHINGPRE', 'olive', 'olives noires à la grecque dénoyautées, seau de 2.5Kg', 11.82, NULL, '14', 'gramme');
+INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (21, '00001VENPIZCRE', 'grande pizza saumon', 'pizza saumon base crème, saumon à l''unité', 11.81, 10, '2', 'piece');
+INSERT INTO public.produit (id, reference_article, libelle, composition, prix_unitaire_ht, tva, id_categorie, unite) VALUES (20, '00001VENPIZTOM', 'moyenne pizza regina', 'pizza base tomate, jambon et mozzarela à l''unité', 10, 10, '1', 'piece');
 
 
 --
--- TOC entry 3035 (class 0 OID 42417)
+-- TOC entry 3008 (class 0 OID 33604)
+-- Dependencies: 204
+-- Data for Name: taille; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.taille (id, taille, quantite_produit) VALUES (1, 'petite', 1);
+INSERT INTO public.taille (id, taille, quantite_produit) VALUES (2, 'moyenne', 1.5);
+INSERT INTO public.taille (id, taille, quantite_produit) VALUES (3, 'grande', 2);
+
+
+--
+-- TOC entry 3036 (class 0 OID 42417)
 -- Dependencies: 232
 -- Data for Name: ingredient_pizza; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (2, 23, 80, 1);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (3, 12, 1, 1);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (4, 1, 80, 1);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (5, 6, 150, 1);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (6, 5, 1, 1);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (7, 24, 3, 1);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (8, 23, 80, 2);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (9, 3, 1.5, 2);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (10, 12, 1, 2);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (11, 1, 80, 2);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (12, 6, 150, 2);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (13, 5, 1, 2);
-INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza) VALUES (14, 24, 3, 2);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (2, 23, 80, 1, 1);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (3, 12, 1, 1, 1);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (4, 1, 80, 1, 1);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (5, 6, 150, 1, 1);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (6, 5, 1, 1, 1);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (7, 24, 3, 1, 1);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (8, 23, 80, 2, 2);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (9, 3, 1.5, 2, 2);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (10, 12, 1, 2, 2);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (11, 1, 80, 2, 2);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (12, 6, 150, 2, 2);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (13, 5, 1, 2, 2);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (14, 24, 3, 2, 2);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (15, 23, 80, 4, 3);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (16, 12, 1, 4, 3);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (17, 1, 80, 4, 3);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (18, 22, 150, 4, 3);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (19, 5, 1, 4, 3);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (20, 24, 3, 4, 3);
+INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, facteur_quantite) VALUES (21, 4, 60, 4, 3);
 
 
 --
--- TOC entry 3031 (class 0 OID 33756)
+-- TOC entry 3032 (class 0 OID 33756)
 -- Dependencies: 228
 -- Data for Name: ligne_de_commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -304,10 +324,12 @@ INSERT INTO public.ligne_de_commande (id, id_commande, id_produit, quantite, pri
 INSERT INTO public.ligne_de_commande (id, id_commande, id_produit, quantite, prix_unitaire_ht, tva) VALUES (5, 2, 16, 3, 2, 20);
 INSERT INTO public.ligne_de_commande (id, id_commande, id_produit, quantite, prix_unitaire_ht, tva) VALUES (6, 2, 17, 2, 5, 10);
 INSERT INTO public.ligne_de_commande (id, id_commande, id_produit, quantite, prix_unitaire_ht, tva) VALUES (7, 2, 19, 1, 4, 10);
+INSERT INTO public.ligne_de_commande (id, id_commande, id_produit, quantite, prix_unitaire_ht, tva) VALUES (8, 4, 20, 1, 10, 10);
+INSERT INTO public.ligne_de_commande (id, id_commande, id_produit, quantite, prix_unitaire_ht, tva) VALUES (9, 4, 21, 1, 11.81, 10);
 
 
 --
--- TOC entry 3036 (class 0 OID 42451)
+-- TOC entry 3037 (class 0 OID 42451)
 -- Dependencies: 233
 -- Data for Name: recette; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -327,7 +349,7 @@ INSERT INTO public.recette (id, recette) VALUES (4, '(Les quantités sont donné
 
 
 --
--- TOC entry 3014 (class 0 OID 33656)
+-- TOC entry 3015 (class 0 OID 33656)
 -- Dependencies: 211
 -- Data for Name: stock; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -347,18 +369,7 @@ INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_
 
 
 --
--- TOC entry 3007 (class 0 OID 33604)
--- Dependencies: 204
--- Data for Name: taille; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO public.taille (id, taille, quantite_produit) VALUES (1, 'petite', 1);
-INSERT INTO public.taille (id, taille, quantite_produit) VALUES (2, 'moyenne', 1.5);
-INSERT INTO public.taille (id, taille, quantite_produit) VALUES (3, 'grande', 2);
-
-
---
--- TOC entry 3042 (class 0 OID 0)
+-- TOC entry 3043 (class 0 OID 0)
 -- Dependencies: 216
 -- Name: adresse_id_adresse_seq_2; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -367,7 +378,7 @@ SELECT pg_catalog.setval('public.adresse_id_adresse_seq_2', 12, true);
 
 
 --
--- TOC entry 3043 (class 0 OID 0)
+-- TOC entry 3044 (class 0 OID 0)
 -- Dependencies: 205
 -- Name: categorie_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -376,7 +387,7 @@ SELECT pg_catalog.setval('public.categorie_id_seq_1', 17, true);
 
 
 --
--- TOC entry 3044 (class 0 OID 0)
+-- TOC entry 3045 (class 0 OID 0)
 -- Dependencies: 225
 -- Name: commande_etat_commande_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -385,16 +396,16 @@ SELECT pg_catalog.setval('public.commande_etat_commande_id_seq', 15, true);
 
 
 --
--- TOC entry 3045 (class 0 OID 0)
+-- TOC entry 3046 (class 0 OID 0)
 -- Dependencies: 223
 -- Name: commande_numero_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.commande_numero_seq', 3, true);
+SELECT pg_catalog.setval('public.commande_numero_seq', 5, true);
 
 
 --
--- TOC entry 3046 (class 0 OID 0)
+-- TOC entry 3047 (class 0 OID 0)
 -- Dependencies: 212
 -- Name: etat_commande_statut_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -403,7 +414,7 @@ SELECT pg_catalog.setval('public.etat_commande_statut_seq', 15, true);
 
 
 --
--- TOC entry 3047 (class 0 OID 0)
+-- TOC entry 3048 (class 0 OID 0)
 -- Dependencies: 214
 -- Name: facture_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -412,16 +423,16 @@ SELECT pg_catalog.setval('public.facture_id_seq_1', 3, true);
 
 
 --
--- TOC entry 3048 (class 0 OID 0)
+-- TOC entry 3049 (class 0 OID 0)
 -- Dependencies: 227
 -- Name: ligne_de_commande_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.ligne_de_commande_id_seq', 7, true);
+SELECT pg_catalog.setval('public.ligne_de_commande_id_seq', 9, true);
 
 
 --
--- TOC entry 3049 (class 0 OID 0)
+-- TOC entry 3050 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: pizza_id_seq_2; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -430,7 +441,7 @@ SELECT pg_catalog.setval('public.pizza_id_seq_2', 4, true);
 
 
 --
--- TOC entry 3050 (class 0 OID 0)
+-- TOC entry 3051 (class 0 OID 0)
 -- Dependencies: 207
 -- Name: produit_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -439,16 +450,16 @@ SELECT pg_catalog.setval('public.produit_id_seq_1', 24, true);
 
 
 --
--- TOC entry 3051 (class 0 OID 0)
+-- TOC entry 3052 (class 0 OID 0)
 -- Dependencies: 231
 -- Name: quantite_ingredient_pizza_id_quantite_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.quantite_ingredient_pizza_id_quantite_seq', 14, true);
+SELECT pg_catalog.setval('public.quantite_ingredient_pizza_id_quantite_seq', 21, true);
 
 
 --
--- TOC entry 3052 (class 0 OID 0)
+-- TOC entry 3053 (class 0 OID 0)
 -- Dependencies: 202
 -- Name: statut_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -457,15 +468,15 @@ SELECT pg_catalog.setval('public.statut_id_seq_1', 1, false);
 
 
 --
--- TOC entry 3053 (class 0 OID 0)
+-- TOC entry 3054 (class 0 OID 0)
 -- Dependencies: 220
 -- Name: utilisateur_id_utilisateur_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.utilisateur_id_utilisateur_seq', 8, true);
+SELECT pg_catalog.setval('public.utilisateur_id_utilisateur_seq', 11, true);
 
 
--- Completed on 2020-01-07 15:49:56
+-- Completed on 2020-01-19 10:30:45
 
 --
 -- PostgreSQL database dump complete

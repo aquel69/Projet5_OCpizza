@@ -1,13 +1,11 @@
-SELECT id_produit, quantite, prix_unitaire_ht, tva, ROUND((SUM(prix_unitaire_ht) * 10 / 100) + SUM(prix_unitaire_ht)) AS prix_ttc WITH SUM(prix_ttc) AS total_ttc FROM ligne_de_commande
+SELECT ROUND((SUM(prix_unitaire_ht) * tva / 100) + SUM(prix_unitaire_ht)) AS total_ttc  FROM ligne_de_commande
 WHERE id_commande = 4
-GROUP BY id_produit, quantite, prix_unitaire_ht, tva;
+GROUP BY id_commande, tva 
 
-SELECT SUM (prix_ttc) FROM ligne_de_commande
-
-SELECT* FROM produit
-
-SELECT ROUND((SUM(prix_unitaire_ht) * 10 / 100) + SUM(prix_unitaire_ht)) AS total FROM ligne_de_commande
-WHERE id_commande = 4;
+SELECT libelle, ligne_de_commande.prix_unitaire_ht AS pht,ligne_de_commande.tva AS taxeva, ROUND((SUM(ligne_de_commande.prix_unitaire_ht) * ligne_de_commande.tva / 100) + SUM(ligne_de_commande.prix_unitaire_ht)) AS prix_ttc FROM ligne_de_commande
+JOIN produit ON produit.id = ligne_de_commande.id_produit
+WHERE id_commande = 4
+GROUP BY libelle, pht, taxeva
 
 UPDATE ligne_de_commande
 SET prix_unitaire_ht = 11.81

@@ -1,5 +1,9 @@
-SELECT nom, prenom, to_char(date_de_naissance, 'dd-mm-yyyy') AS date_de_naissance, to_char(date_creation_de_compte, 'dd-mm-yyyy hh24:mi:ss') AS date_creation_de_compte, numero_de_telephone_mobile, numero_de_telephone_fixe, id_adresse_postale, email, type
+SELECT nom, prenom, voie, complement, commune, code_postal, numero_de_telephone_mobile, numero_de_telephone_fixe, to_char(date_de_naissance, 'dd-mm-yyyy') AS date_de_naissance, id_adresse_livraison, voie AS livraison_voie, complement AS livraison_complement, commune AS livraison_commune, code_postal AS livraison_code_postal,password, email
 FROM utilisateur
+JOIN adresse ON utilisateur.id_adresse_postale = adresse.id
+JOIN authentification  ON utilisateur.id = authentification.id_utilisateur
+JOIN client ON utilisateur.id = client.id
+WHERE utilisateur.nom = 'Rut'
 
 SELECT * FROM utilisateur
 

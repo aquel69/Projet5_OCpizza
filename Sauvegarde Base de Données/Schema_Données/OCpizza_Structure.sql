@@ -3,9 +3,9 @@
 --
 
 -- Dumped from database version 12.1
--- Dumped by pg_dump version 12.1
+-- Dumped by pg_dump version 12.0
 
--- Started on 2020-01-07 15:49:07
+-- Started on 2020-01-19 10:30:05
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -54,7 +54,7 @@ CREATE SEQUENCE public.adresse_id_adresse_seq_2
 ALTER TABLE public.adresse_id_adresse_seq_2 OWNER TO postgres;
 
 --
--- TOC entry 3010 (class 0 OID 0)
+-- TOC entry 3011 (class 0 OID 0)
 -- Dependencies: 216
 -- Name: adresse_id_adresse_seq_2; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -107,7 +107,7 @@ CREATE SEQUENCE public.categorie_id_seq_1
 ALTER TABLE public.categorie_id_seq_1 OWNER TO postgres;
 
 --
--- TOC entry 3011 (class 0 OID 0)
+-- TOC entry 3012 (class 0 OID 0)
 -- Dependencies: 205
 -- Name: categorie_id_seq_1; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -123,7 +123,6 @@ ALTER SEQUENCE public.categorie_id_seq_1 OWNED BY public.categorie.id;
 CREATE TABLE public.client (
     id numeric NOT NULL,
     numero numeric(10,0) NOT NULL,
-    email character varying(50) NOT NULL,
     id_adresse_livraison numeric NOT NULL
 );
 
@@ -177,7 +176,7 @@ CREATE SEQUENCE public.commande_etat_commande_id_seq
 ALTER TABLE public.commande_etat_commande_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3012 (class 0 OID 0)
+-- TOC entry 3013 (class 0 OID 0)
 -- Dependencies: 225
 -- Name: commande_etat_commande_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -201,7 +200,7 @@ CREATE SEQUENCE public.commande_numero_seq
 ALTER TABLE public.commande_numero_seq OWNER TO postgres;
 
 --
--- TOC entry 3013 (class 0 OID 0)
+-- TOC entry 3014 (class 0 OID 0)
 -- Dependencies: 223
 -- Name: commande_numero_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -253,7 +252,7 @@ CREATE SEQUENCE public.etat_commande_statut_seq
 ALTER TABLE public.etat_commande_statut_seq OWNER TO postgres;
 
 --
--- TOC entry 3014 (class 0 OID 0)
+-- TOC entry 3015 (class 0 OID 0)
 -- Dependencies: 212
 -- Name: etat_commande_statut_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -294,7 +293,7 @@ CREATE SEQUENCE public.facture_id_seq_1
 ALTER TABLE public.facture_id_seq_1 OWNER TO postgres;
 
 --
--- TOC entry 3015 (class 0 OID 0)
+-- TOC entry 3016 (class 0 OID 0)
 -- Dependencies: 214
 -- Name: facture_id_seq_1; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -311,7 +310,8 @@ CREATE TABLE public.ingredient_pizza (
     id numeric NOT NULL,
     id_produit numeric NOT NULL,
     quantite numeric NOT NULL,
-    id_pizza numeric NOT NULL
+    id_pizza numeric NOT NULL,
+    facteur_quantite numeric NOT NULL
 );
 
 
@@ -327,7 +327,7 @@ CREATE TABLE public.ligne_de_commande (
     id_commande numeric NOT NULL,
     id_produit numeric NOT NULL,
     quantite numeric(4,0) NOT NULL,
-    prix_unitaire_ht numeric(5,0) NOT NULL,
+    prix_unitaire_ht real NOT NULL,
     tva numeric(4,0) NOT NULL
 );
 
@@ -350,7 +350,7 @@ CREATE SEQUENCE public.ligne_de_commande_id_seq
 ALTER TABLE public.ligne_de_commande_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3016 (class 0 OID 0)
+-- TOC entry 3017 (class 0 OID 0)
 -- Dependencies: 227
 -- Name: ligne_de_commande_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -387,7 +387,7 @@ CREATE SEQUENCE public.pizza_id_seq_2
 ALTER TABLE public.pizza_id_seq_2 OWNER TO postgres;
 
 --
--- TOC entry 3017 (class 0 OID 0)
+-- TOC entry 3018 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: pizza_id_seq_2; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -443,7 +443,7 @@ CREATE SEQUENCE public.produit_id_seq_1
 ALTER TABLE public.produit_id_seq_1 OWNER TO postgres;
 
 --
--- TOC entry 3018 (class 0 OID 0)
+-- TOC entry 3019 (class 0 OID 0)
 -- Dependencies: 207
 -- Name: produit_id_seq_1; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -467,7 +467,7 @@ CREATE SEQUENCE public.quantite_ingredient_pizza_id_quantite_seq
 ALTER TABLE public.quantite_ingredient_pizza_id_quantite_seq OWNER TO postgres;
 
 --
--- TOC entry 3019 (class 0 OID 0)
+-- TOC entry 3020 (class 0 OID 0)
 -- Dependencies: 231
 -- Name: quantite_ingredient_pizza_id_quantite_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -532,7 +532,7 @@ CREATE SEQUENCE public.statut_id_seq_1
 ALTER TABLE public.statut_id_seq_1 OWNER TO postgres;
 
 --
--- TOC entry 3020 (class 0 OID 0)
+-- TOC entry 3021 (class 0 OID 0)
 -- Dependencies: 202
 -- Name: statut_id_seq_1; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -583,11 +583,27 @@ CREATE TABLE public.utilisateur (
     date_creation_de_compte timestamp without time zone NOT NULL,
     numero_de_telephone_mobile character varying(10) NOT NULL,
     numero_de_telephone_fixe character varying(10),
-    id_adresse_postale numeric NOT NULL
+    id_adresse_postale numeric NOT NULL,
+    email character varying(100),
+    type numeric(1,0)
 );
 
 
 ALTER TABLE public.utilisateur OWNER TO postgres;
+
+--
+-- TOC entry 3022 (class 0 OID 0)
+-- Dependencies: 221
+-- Name: COLUMN utilisateur.type; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON COLUMN public.utilisateur.type IS 'le type d''utilisateur correspond a :
+1 : gérant
+2 : responsable
+3 : pizzaiolo
+4 : livreur
+5 : client';
+
 
 --
 -- TOC entry 220 (class 1259 OID 33713)
@@ -605,7 +621,7 @@ CREATE SEQUENCE public.utilisateur_id_utilisateur_seq
 ALTER TABLE public.utilisateur_id_utilisateur_seq OWNER TO postgres;
 
 --
--- TOC entry 3021 (class 0 OID 0)
+-- TOC entry 3023 (class 0 OID 0)
 -- Dependencies: 220
 -- Name: utilisateur_id_utilisateur_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -997,7 +1013,7 @@ ALTER TABLE ONLY public.ingredient_pizza
 
 
 --
--- TOC entry 2878 (class 2606 OID 42459)
+-- TOC entry 2879 (class 2606 OID 42459)
 -- Name: recette pizza_recette_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1060,6 +1076,15 @@ ALTER TABLE ONLY public.etat_commande
 
 
 --
+-- TOC entry 2878 (class 2606 OID 42484)
+-- Name: ingredient_pizza taille_ingredient_pizza_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.ingredient_pizza
+    ADD CONSTRAINT taille_ingredient_pizza_fk FOREIGN KEY (facteur_quantite) REFERENCES public.taille(id);
+
+
+--
 -- TOC entry 2875 (class 2606 OID 33861)
 -- Name: authentification utilisateur_authentification_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
@@ -1086,7 +1111,7 @@ ALTER TABLE ONLY public.employe
     ADD CONSTRAINT utilisateur_employe_fk FOREIGN KEY (id) REFERENCES public.utilisateur(id);
 
 
--- Completed on 2020-01-07 15:49:07
+-- Completed on 2020-01-19 10:30:05
 
 --
 -- PostgreSQL database dump complete
