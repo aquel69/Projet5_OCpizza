@@ -464,7 +464,7 @@
   <table id="TAB120" populated="true" UUID="52aa260c-299b-42e2-9bfe-d58fad6af5bf" name="taille" objectType="TABLE" physicalName="taille" >
    <remarks></remarks>
    <folder id="FOLTAB1201" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL121" populated="true" UUID="a916dbf2-b284-4fdb-8013-c486dee2a097" autoIncrement="false" autoIncrementSequenceName="taille_id_seq_1_1" defaultValue="" name="id_taille" nullable="0" physicalName="id_taille" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL121" populated="true" UUID="a916dbf2-b284-4fdb-8013-c486dee2a097" autoIncrement="false" autoIncrementSequenceName="taille_id_seq_1_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL122" populated="true" UUID="3518bcd8-2de7-4c8a-8bfc-84bbd036a997" autoIncrement="false" autoIncrementSequenceName="taille_taille_seq" defaultValue="" name="taille" nullable="0" physicalName="taille" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -480,7 +480,7 @@
     </folder>
     <folder id="FOLTAB1204" populated="true" name="Indices" physicalName="Indices" type="4">
     <index id="IDX124" populated="true" UUID="8f720a52-5df5-4dec-96e0-eaaedc0ff197" clustered="false" name="taille_pk" physicalName="taille_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC125" populated="true" UUID="4ced2670-3f57-4e50-9d42-47a81b7a461b" ascendingOrDescending="UNSPECIFIED" column-ref="COL121" name="id_taille" physicalName="id_taille" />
+     <index-column id="IDC125" populated="true" UUID="4ced2670-3f57-4e50-9d42-47a81b7a461b" ascendingOrDescending="UNSPECIFIED" column-ref="COL121" name="id" physicalName="id" />
     </index>
    </folder>
   </table>
@@ -628,7 +628,7 @@
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
