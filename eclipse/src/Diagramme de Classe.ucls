@@ -138,7 +138,7 @@
   </class>  
   <enumeration id="16" language="java" name="produit.IngredientPizza" project="PProjet5_BDD_OC-pizza" 
     file="/PProjet5_BDD_OC-pizza/src/produit/IngredientPizza.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="782" y="2518"/>    
+    <position height="-1" width="-1" x="787" y="2645"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -147,7 +147,7 @@
   </enumeration>  
   <enumeration id="17" language="java" name="produit.Pizza" project="PProjet5_BDD_OC-pizza" 
     file="/PProjet5_BDD_OC-pizza/src/produit/Pizza.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1134" y="2472"/>    
+    <position height="-1" width="-1" x="1142" y="2377"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -156,7 +156,7 @@
   </enumeration>  
   <enumeration id="18" language="java" name="produit.Taille" project="PProjet5_BDD_OC-pizza" 
     file="/PProjet5_BDD_OC-pizza/src/produit/Taille.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1460" y="2230"/>    
+    <position height="-1" width="-1" x="1138" y="2732"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -165,7 +165,7 @@
   </enumeration>  
   <enumeration id="19" language="java" name="produit.Recette" project="PProjet5_BDD_OC-pizza" 
     file="/PProjet5_BDD_OC-pizza/src/produit/Recette.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1465" y="2653"/>    
+    <position height="-1" width="-1" x="1420" y="2379"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -182,27 +182,27 @@
     </display>  
   </class>  
   <association id="21">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="22" name="status">        
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="22" name="siret">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="23" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
+    <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="24">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="25" name="produitDeBase">        
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="25" name="commande">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="26" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
+    <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="27">    
@@ -218,79 +218,79 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="30">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="31" name="adresseDuSite">        
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="31" name="commande">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="32" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <generalization id="33">    
-    <end type="SOURCE" refId="3"/>    
+    <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
   <association id="34">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="35" name="commande">        
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="35" name="adresseLivraison">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="36" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="37">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="38" name="utilisateur">        
-        <position height="0" width="0" x="-1" y="-42"/>      
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="38" name="vendeur">        
+        <position height="0" width="0" x="-3" y="-42"/>      
       </attribute>      
       <multiplicity id="39" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-1" y="-42"/>      
+        <position height="0" width="0" x="-3" y="-42"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="40">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="41" name="adresseLivraison">        
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="41" name="categorie">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="42" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="43">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="44" name="adresseDeLivraison">        
-        <position height="0" width="0" x="0" y="0"/>      
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="44" name="utilisateur">        
+        <position height="0" width="0" x="-1" y="-42"/>      
       </attribute>      
       <multiplicity id="45" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
+        <position height="0" width="0" x="-1" y="-42"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="46">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="47" name="siret">        
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="47" name="adresseDuSite">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="48" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="49">    
@@ -306,81 +306,81 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="52">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="53" name="etatCommande">        
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="53" name="adresseDeLivraison">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="54" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="55">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="56" name="categorie">        
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="56" name="status">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="57" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
+    <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="58">    
+  <generalization id="58">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="59">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="59" name="role">        
+      <attribute id="60" name="role">        
         <position height="0" width="0" x="3" y="-44"/>      
       </attribute>      
-      <multiplicity id="60" minimum="0" maximum="1">        
+      <multiplicity id="61" minimum="0" maximum="1">        
         <position height="0" width="0" x="3" y="-44"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="61">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="62" name="commande">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="63" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="64">    
+  <association id="62">    
     <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="65" name="commande">        
+      <attribute id="63" name="etatCommande">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="66" minimum="0" maximum="1">        
+      <multiplicity id="64" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="65">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="66" name="commande">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="67" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="67">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="68" name="vendeur">        
-        <position height="0" width="0" x="-3" y="-42"/>      
+  <association id="68">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="69" name="produitDeBase">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="69" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-3" y="-42"/>      
+      <multiplicity id="70" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="15" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="70">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

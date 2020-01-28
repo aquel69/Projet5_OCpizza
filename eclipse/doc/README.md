@@ -98,8 +98,14 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 5. La sauvegarde de mon schéma est crée. Je répète le même processus pour les données, en retirant juste le type 'Shéma uniquement' et en mettant à la place 'Données uniquement' sur 'yes' dans 'Options de sauvegarde'.  
 	&nbsp;
 	
+## Sauvegarder la Base de Données complète (Schéma + Données)
+1. Dans pgAdmin4, je selectionne la base de données que je souhaite sauvegarder et ensuite je fais un clic droit, puis je selectionne 'Sauvegarder'. Je clic sur l'icone à 3 points, puis choisis le répertoire et le nom ou je souhaite enregistrer la sauvegarde. Je selectionne 'backup' pour le type et je fais 'créer'.  
+2. ensuite je laisse le format sur 'Personnalisé', je selectionne dans la partie encodage 'UTF8 et le role 'postgres'. Et je clic sur 'Sauvegarde'. La sauvegarde est faite.
+![photo Sauvegarde complète 1](Sauvegarde complète 1.png "Sauvegarde complète 1")  
+	&nbsp;  
+	
 ## Diagramme de Composants et de Déploiement
-1. Le Diagramme de composants est un diagramme qui représente plusieurs composant inclus dans des sous-système qui relié entre eux represente le système global. Un composant est un élément logiciel remplaçable et réutilisable qui fourni ou reçoit unservice bien précis. Il peut être vu comme une pièce détachée du logiciel. Voici celui représentant le système global d'"OC Pizza" :  
+1. Le Diagramme de composants est un diagramme qui représente plusieurs composant inclus dans des sous-système qui relié entre eux represente le système global. Un composant est un élément logiciel remplaçable et réutilisable qui fourni ou reçoit un service bien précis. Il peut être vu comme une pièce détachée du logiciel. Voici celui représentant le système global d'"OC Pizza" :  
 	&nbsp;
 ![photo Diagramme de Composants](DiagrammeDeComposants.png "Diagramme de Composants")  
 	&nbsp;

@@ -74,7 +74,7 @@ CREATE TABLE public.ingredient_pizza (
                 id_pizza NUMERIC NOT NULL,
                 id_produit NUMERIC NOT NULL,
                 quantite NUMERIC NOT NULL,
-                facteur_quantite NUMERIC NOT NULL,
+                id_taille NUMERIC NOT NULL,
                 CONSTRAINT ingredient_pizza_pk PRIMARY KEY (id)
 );
 
@@ -246,7 +246,7 @@ ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
 ALTER TABLE public.ingredient_pizza ADD CONSTRAINT taille_ingredient_pizza_fk
-FOREIGN KEY (facteur_quantite)
+FOREIGN KEY (id_taille)
 REFERENCES public.taille (id)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION

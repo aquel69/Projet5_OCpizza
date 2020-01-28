@@ -545,7 +545,7 @@
     <column id="COL142" populated="true" UUID="d2e2f220-f4d9-4297-9bcb-c9216af24a34" autoIncrement="false" autoIncrementSequenceName="ingredient_pizza_quantite_seq" defaultValue="" name="quantite" nullable="0" physicalName="quantite" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL143" populated="true" UUID="5255ebe6-cf0f-4d37-b664-d4bf61e77536" autoIncrement="false" autoIncrementSequenceName="taille_id_seq_1_1_1" defaultValue="" name="facteur_quantite" nullable="0" physicalName="facteur_quantite" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL143" populated="true" UUID="5255ebe6-cf0f-4d37-b664-d4bf61e77536" autoIncrement="false" autoIncrementSequenceName="taille_id_seq_1_1_1" defaultValue="" name="id_taille" nullable="0" physicalName="id_taille" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -651,7 +651,7 @@
   <table-pane table-ref="TAB120" x="145" y="947" bgColor="0xc8dccc" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB126" x="748" y="441" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB132" x="722" y="706" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB138" x="430" y="937" bgColor="0xc8dccc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB138" x="446" y="937" bgColor="0xc8dccc" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-link relationship-ref="REL156" pkConnection="0.5" fkConnection="0.5428571428571428" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
   <table-link relationship-ref="REL158" pkConnection="0.1989247311827957" fkConnection="0.4773662551440329" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
   <table-link relationship-ref="REL152" pkConnection="0.8497652582159625" fkConnection="0.7244094488188977" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="20"/>

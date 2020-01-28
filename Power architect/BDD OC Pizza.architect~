@@ -545,7 +545,7 @@
     <column id="COL142" populated="true" UUID="d2e2f220-f4d9-4297-9bcb-c9216af24a34" autoIncrement="false" autoIncrementSequenceName="ingredient_pizza_quantite_seq" defaultValue="" name="quantite" nullable="0" physicalName="quantite" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL143" populated="true" UUID="5255ebe6-cf0f-4d37-b664-d4bf61e77536" autoIncrement="false" autoIncrementSequenceName="taille_id_seq_1_1" defaultValue="" name="facteur_quantite" nullable="0" physicalName="facteur_quantite" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL143" populated="true" UUID="5255ebe6-cf0f-4d37-b664-d4bf61e77536" autoIncrement="false" autoIncrementSequenceName="taille_id_seq_1_1_1" defaultValue="" name="id_taille" nullable="0" physicalName="id_taille" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -628,7 +628,7 @@
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
