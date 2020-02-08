@@ -114,4 +114,4 @@ Je donne un nom à mon Diagramme et je fais 'FINISH'.
 	&nbsp;
 2. Le Diagramme de Déploiement décrit un aspect du système même. Il affiche la configuration des éléments matériels (noeuds) et affiche comment des éléments logiciels et des artefacts sont mappés sur ces noeuds. Voici celui représentant le système global d'"OC Pizza" :  
 	&nbsp;
-![DiagrammeDeDeploiement](https://user-images.githubusercontent.com/45402044/72075679-25702a80-32ec-11ea-8dd4-ac4023840638.png)  
+![DiagrammeDeDeploiement](https://user-images.githubusercontent.com/45402044/73606835-633c3800-45a6-11ea-822a-25c272c13a9f.png) 
