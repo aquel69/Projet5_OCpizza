@@ -2,6 +2,8 @@ package produit;
 
 import java.text.DateFormat;
 
+import pointDeVente.PointDeVente;
+
 public class Stock {
 	
 	private Produit produitDeBase;
@@ -9,16 +11,35 @@ public class Stock {
 	private int quantiteRestante;
 	private DateFormat dateAchat;
 	private DateFormat dateDePeremption;
-	
+	private PointDeVente poinDeVente;
 	
 	public Stock(Produit produitDeBase, String codeEAN, int quantiteRestante, DateFormat dateAchat,
-			DateFormat dateDePeremption) {
+			DateFormat dateDePeremption, PointDeVente poinDeVente) {
 		super();
 		this.produitDeBase = produitDeBase;
 		this.codeEAN = codeEAN;
 		this.quantiteRestante = quantiteRestante;
 		this.dateAchat = dateAchat;
 		this.dateDePeremption = dateDePeremption;
+		this.poinDeVente = poinDeVente;
+	}
+	
+	
+	
+	public int getQuantiteRestante() {
+		return quantiteRestante;
+	}
+
+	public void setQuantiteRestante(int quantiteRestante) {
+		this.quantiteRestante = quantiteRestante;
+	}
+
+	public PointDeVente getPoinDeVente() {
+		return poinDeVente;
+	}
+
+	public void setPoinDeVente(PointDeVente poinDeVente) {
+		this.poinDeVente = poinDeVente;
 	}
 
 	public Produit getProduitDeBase() {
@@ -60,14 +81,15 @@ public class Stock {
 	public void setDateDePeremption(DateFormat dateDePeremption) {
 		this.dateDePeremption = dateDePeremption;
 	}
-	
+
+
 
 	@Override
 	public String toString() {
-		return "Stock [produitDeBase=" + produitDeBase + ", codeEAN=" + codeEAN + ", quantiteRestante=" + quantiteRestante
-				+ ", dateAchat=" + dateAchat + ", dateDePeremption=" + dateDePeremption + "]";
+		return "Stock [produitDeBase=" + produitDeBase + ", codeEAN=" + codeEAN + ", quantiteRestante="
+				+ quantiteRestante + ", dateAchat=" + dateAchat + ", dateDePeremption=" + dateDePeremption
+				+ ", poinDeVente=" + poinDeVente + "]";
 	}
-
 	
 		
 }

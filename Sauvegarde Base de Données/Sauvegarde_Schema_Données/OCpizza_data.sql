@@ -5,7 +5,7 @@
 -- Dumped from database version 12.1
 -- Dumped by pg_dump version 12.0
 
--- Started on 2020-02-08 08:23:58
+-- Started on 2020-02-13 10:45:48
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -20,7 +20,7 @@ SET row_security = off;
 
 --
 -- TOC entry 3023 (class 0 OID 33688)
--- Dependencies: 219
+-- Dependencies: 218
 -- Data for Name: adresse; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -40,7 +40,7 @@ INSERT INTO public.adresse (id, voie, complement, code_postal, commune) VALUES (
 
 --
 -- TOC entry 3027 (class 0 OID 33715)
--- Dependencies: 223
+-- Dependencies: 222
 -- Data for Name: utilisateur; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -56,7 +56,7 @@ INSERT INTO public.utilisateur (id, nom, prenom, date_de_naissance, date_creatio
 
 --
 -- TOC entry 3036 (class 0 OID 33773)
--- Dependencies: 232
+-- Dependencies: 231
 -- Data for Name: authentification; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -71,7 +71,7 @@ INSERT INTO public.authentification (id_utilisateur, username, password) VALUES 
 
 
 --
--- TOC entry 3012 (class 0 OID 33614)
+-- TOC entry 3013 (class 0 OID 33614)
 -- Dependencies: 208
 -- Data for Name: categorie; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -97,7 +97,7 @@ INSERT INTO public.categorie (id, classe, sous_classe, "catégorie") VALUES ('17
 
 --
 -- TOC entry 3035 (class 0 OID 33765)
--- Dependencies: 231
+-- Dependencies: 230
 -- Data for Name: client; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -108,7 +108,7 @@ INSERT INTO public.client (id, numero, id_adresse_livraison) VALUES (8, 369300, 
 
 --
 -- TOC entry 3025 (class 0 OID 33705)
--- Dependencies: 221
+-- Dependencies: 220
 -- Data for Name: role; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -120,7 +120,7 @@ INSERT INTO public.role (id, role, description) VALUES (4, 'livreur', 'Le livreu
 
 --
 -- TOC entry 3028 (class 0 OID 33724)
--- Dependencies: 224
+-- Dependencies: 223
 -- Data for Name: employe; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -133,7 +133,7 @@ INSERT INTO public.employe (id, numero_employe, id_role) VALUES (5, 197016938000
 
 --
 -- TOC entry 3024 (class 0 OID 33697)
--- Dependencies: 220
+-- Dependencies: 219
 -- Data for Name: point_de_vente; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -146,7 +146,7 @@ INSERT INTO public.point_de_vente (siret, id_adresse_du_site) VALUES (8029547850
 
 --
 -- TOC entry 3030 (class 0 OID 33734)
--- Dependencies: 226
+-- Dependencies: 225
 -- Data for Name: commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -158,7 +158,7 @@ INSERT INTO public.commande (id, numero, date_enregistrement, id_adresse_de_livr
 
 
 --
--- TOC entry 3009 (class 0 OID 33595)
+-- TOC entry 3010 (class 0 OID 33595)
 -- Dependencies: 205
 -- Data for Name: statut; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -176,7 +176,7 @@ INSERT INTO public.statut (id, code, description) VALUES (9, 'Commande finalisé
 
 --
 -- TOC entry 3019 (class 0 OID 33666)
--- Dependencies: 215
+-- Dependencies: 214
 -- Data for Name: etat_commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -199,7 +199,7 @@ INSERT INTO public.etat_commande (id, id_statut, date) VALUES (15, 2, '2020-01-0
 
 --
 -- TOC entry 3032 (class 0 OID 33745)
--- Dependencies: 228
+-- Dependencies: 227
 -- Data for Name: commande_etat_commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -222,14 +222,14 @@ INSERT INTO public.commande_etat_commande (id, id_commande, id_etat_commande) VA
 
 --
 -- TOC entry 3021 (class 0 OID 33677)
--- Dependencies: 217
+-- Dependencies: 216
 -- Data for Name: facture; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 
 
 --
--- TOC entry 3016 (class 0 OID 33636)
+-- TOC entry 3017 (class 0 OID 33636)
 -- Dependencies: 212
 -- Data for Name: pizza; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -241,7 +241,7 @@ INSERT INTO public.pizza (id, nom) VALUES (4, 'norvégienne');
 
 
 --
--- TOC entry 3014 (class 0 OID 33625)
+-- TOC entry 3015 (class 0 OID 33625)
 -- Dependencies: 210
 -- Data for Name: produit; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -273,7 +273,7 @@ INSERT INTO public.produit (id, reference_article, libelle, composition, prix_un
 
 
 --
--- TOC entry 3010 (class 0 OID 33604)
+-- TOC entry 3011 (class 0 OID 33604)
 -- Dependencies: 206
 -- Data for Name: taille; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -285,7 +285,7 @@ INSERT INTO public.taille (id, taille, quantite_produit) VALUES (3, 'grande', 2)
 
 --
 -- TOC entry 3038 (class 0 OID 42417)
--- Dependencies: 234
+-- Dependencies: 233
 -- Data for Name: ingredient_pizza; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -313,7 +313,7 @@ INSERT INTO public.ingredient_pizza (id, id_produit, quantite, id_pizza, id_tail
 
 --
 -- TOC entry 3034 (class 0 OID 33756)
--- Dependencies: 230
+-- Dependencies: 229
 -- Data for Name: ligne_de_commande; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -330,7 +330,7 @@ INSERT INTO public.ligne_de_commande (id, id_commande, id_produit, quantite, pri
 
 --
 -- TOC entry 3039 (class 0 OID 42451)
--- Dependencies: 235
+-- Dependencies: 234
 -- Data for Name: recette; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -349,28 +349,28 @@ INSERT INTO public.recette (id, recette) VALUES (4, '(Les quantités sont donné
 
 
 --
--- TOC entry 3017 (class 0 OID 33656)
--- Dependencies: 213
+-- TOC entry 3040 (class 0 OID 43427)
+-- Dependencies: 235
 -- Data for Name: stock; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3309586415225', 1, 10000, '2019-12-31', '2020-01-10');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('330435526548', 2, 5000, '2019-12-31', '2020-01-10');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3456825265339', 3, 1000, '2019-12-31', '2020-01-27');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3304545813229', 4, 5000, '2019-12-31', '2020-01-29');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3301810011089', 5, 500, '2019-12-31', '2021-12-31');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3304848008865', 6, 100000, '2019-12-31', '2021-12-31');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3425588111000', 7, 10000, '2019-12-31', '2020-12-31');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3388044400088', 8, 5000, '2019-12-31', '2021-12-31');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3149812800099', 9, 480, '2019-12-31', '2021-12-31');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3306597000870', 10, 480, '2019-12-31', '2021-12-31');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3304488000580', 11, 200, '2019-12-31', '2021-01-29');
-INSERT INTO public.stock (code_ean, id_produit_de_base, quantite_restante, date_achat, date_de_peremption) VALUES ('3429710004691', 21, 6000, '2019-12-31', '2020-06-30');
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3309586415225', '2020-01-10', 1, 10000, '2019-12-31', 80295478500001);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('330435526548', '2020-01-10', 2, 5000, '2019-12-31', 80295478500001);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3456825265339', '2020-01-27', 3, 1000, '2019-12-31', 80295478500001);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3304545813229', '2020-01-29', 4, 5000, '2019-12-31', 80295478500002);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3301810011089', '2021-12-31', 5, 500, '2019-12-31', 80295478500002);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3304848008865', '2021-12-31', 6, 100000, '2019-12-31', 80295478500003);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3425588111000', '2020-12-31', 7, 10000, '2019-12-31', 80295478500003);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3388044400088', '2021-12-31', 8, 5000, '2019-12-31', 80295478500004);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3149812800099', '2021-12-31', 9, 480, '2019-12-31', 80295478500004);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3306597000870', '2021-12-31', 10, 480, '2019-12-31', 80295478500005);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3304488000580', '2021-01-29', 11, 200, '2019-12-31', 80295478500005);
+INSERT INTO public.stock (code_ean, date_de_peremption, id_produit_de_base, quantite_restante, date_achat, point_de_vente) VALUES ('3429710004691', '2020-06-30', 21, 6000, '2019-12-31', 80295478500005);
 
 
 --
--- TOC entry 3045 (class 0 OID 0)
--- Dependencies: 218
+-- TOC entry 3046 (class 0 OID 0)
+-- Dependencies: 217
 -- Name: adresse_id_adresse_seq_2; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -378,7 +378,7 @@ SELECT pg_catalog.setval('public.adresse_id_adresse_seq_2', 12, true);
 
 
 --
--- TOC entry 3046 (class 0 OID 0)
+-- TOC entry 3047 (class 0 OID 0)
 -- Dependencies: 207
 -- Name: categorie_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -387,8 +387,8 @@ SELECT pg_catalog.setval('public.categorie_id_seq_1', 17, true);
 
 
 --
--- TOC entry 3047 (class 0 OID 0)
--- Dependencies: 227
+-- TOC entry 3048 (class 0 OID 0)
+-- Dependencies: 226
 -- Name: commande_etat_commande_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -396,8 +396,8 @@ SELECT pg_catalog.setval('public.commande_etat_commande_id_seq', 15, true);
 
 
 --
--- TOC entry 3048 (class 0 OID 0)
--- Dependencies: 225
+-- TOC entry 3049 (class 0 OID 0)
+-- Dependencies: 224
 -- Name: commande_numero_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -405,8 +405,8 @@ SELECT pg_catalog.setval('public.commande_numero_seq', 5, true);
 
 
 --
--- TOC entry 3049 (class 0 OID 0)
--- Dependencies: 214
+-- TOC entry 3050 (class 0 OID 0)
+-- Dependencies: 213
 -- Name: etat_commande_statut_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -414,8 +414,8 @@ SELECT pg_catalog.setval('public.etat_commande_statut_seq', 15, true);
 
 
 --
--- TOC entry 3050 (class 0 OID 0)
--- Dependencies: 216
+-- TOC entry 3051 (class 0 OID 0)
+-- Dependencies: 215
 -- Name: facture_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -423,8 +423,8 @@ SELECT pg_catalog.setval('public.facture_id_seq_1', 3, true);
 
 
 --
--- TOC entry 3051 (class 0 OID 0)
--- Dependencies: 229
+-- TOC entry 3052 (class 0 OID 0)
+-- Dependencies: 228
 -- Name: ligne_de_commande_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -432,7 +432,7 @@ SELECT pg_catalog.setval('public.ligne_de_commande_id_seq', 9, true);
 
 
 --
--- TOC entry 3052 (class 0 OID 0)
+-- TOC entry 3053 (class 0 OID 0)
 -- Dependencies: 211
 -- Name: pizza_id_seq_2; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -441,7 +441,7 @@ SELECT pg_catalog.setval('public.pizza_id_seq_2', 4, true);
 
 
 --
--- TOC entry 3053 (class 0 OID 0)
+-- TOC entry 3054 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: produit_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -450,8 +450,8 @@ SELECT pg_catalog.setval('public.produit_id_seq_1', 24, true);
 
 
 --
--- TOC entry 3054 (class 0 OID 0)
--- Dependencies: 233
+-- TOC entry 3055 (class 0 OID 0)
+-- Dependencies: 232
 -- Name: quantite_ingredient_pizza_id_quantite_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -459,7 +459,7 @@ SELECT pg_catalog.setval('public.quantite_ingredient_pizza_id_quantite_seq', 21,
 
 
 --
--- TOC entry 3055 (class 0 OID 0)
+-- TOC entry 3056 (class 0 OID 0)
 -- Dependencies: 204
 -- Name: statut_id_seq_1; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -468,15 +468,15 @@ SELECT pg_catalog.setval('public.statut_id_seq_1', 1, false);
 
 
 --
--- TOC entry 3056 (class 0 OID 0)
--- Dependencies: 222
+-- TOC entry 3057 (class 0 OID 0)
+-- Dependencies: 221
 -- Name: utilisateur_id_utilisateur_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.utilisateur_id_utilisateur_seq', 11, true);
 
 
--- Completed on 2020-02-08 08:23:58
+-- Completed on 2020-02-13 10:45:48
 
 --
 -- PostgreSQL database dump complete

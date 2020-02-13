@@ -5,7 +5,7 @@
 -- Dumped from database version 12.1
 -- Dumped by pg_dump version 12.0
 
--- Started on 2020-02-08 08:18:24
+-- Started on 2020-02-13 10:47:02
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -23,7 +23,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- TOC entry 219 (class 1259 OID 33688)
+-- TOC entry 218 (class 1259 OID 33688)
 -- Name: adresse; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -39,7 +39,7 @@ CREATE TABLE public.adresse (
 ALTER TABLE public.adresse OWNER TO postgres;
 
 --
--- TOC entry 218 (class 1259 OID 33686)
+-- TOC entry 217 (class 1259 OID 33686)
 -- Name: adresse_id_adresse_seq_2; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -54,8 +54,8 @@ CREATE SEQUENCE public.adresse_id_adresse_seq_2
 ALTER TABLE public.adresse_id_adresse_seq_2 OWNER TO postgres;
 
 --
--- TOC entry 3013 (class 0 OID 0)
--- Dependencies: 218
+-- TOC entry 3014 (class 0 OID 0)
+-- Dependencies: 217
 -- Name: adresse_id_adresse_seq_2; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -63,7 +63,7 @@ ALTER SEQUENCE public.adresse_id_adresse_seq_2 OWNED BY public.adresse.id;
 
 
 --
--- TOC entry 232 (class 1259 OID 33773)
+-- TOC entry 231 (class 1259 OID 33773)
 -- Name: authentification; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -107,7 +107,7 @@ CREATE SEQUENCE public.categorie_id_seq_1
 ALTER TABLE public.categorie_id_seq_1 OWNER TO postgres;
 
 --
--- TOC entry 3014 (class 0 OID 0)
+-- TOC entry 3015 (class 0 OID 0)
 -- Dependencies: 207
 -- Name: categorie_id_seq_1; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -116,7 +116,7 @@ ALTER SEQUENCE public.categorie_id_seq_1 OWNED BY public.categorie.id;
 
 
 --
--- TOC entry 231 (class 1259 OID 33765)
+-- TOC entry 230 (class 1259 OID 33765)
 -- Name: client; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -130,7 +130,7 @@ CREATE TABLE public.client (
 ALTER TABLE public.client OWNER TO postgres;
 
 --
--- TOC entry 226 (class 1259 OID 33734)
+-- TOC entry 225 (class 1259 OID 33734)
 -- Name: commande; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -147,7 +147,7 @@ CREATE TABLE public.commande (
 ALTER TABLE public.commande OWNER TO postgres;
 
 --
--- TOC entry 228 (class 1259 OID 33745)
+-- TOC entry 227 (class 1259 OID 33745)
 -- Name: commande_etat_commande; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -161,7 +161,7 @@ CREATE TABLE public.commande_etat_commande (
 ALTER TABLE public.commande_etat_commande OWNER TO postgres;
 
 --
--- TOC entry 227 (class 1259 OID 33743)
+-- TOC entry 226 (class 1259 OID 33743)
 -- Name: commande_etat_commande_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -176,8 +176,8 @@ CREATE SEQUENCE public.commande_etat_commande_id_seq
 ALTER TABLE public.commande_etat_commande_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3015 (class 0 OID 0)
--- Dependencies: 227
+-- TOC entry 3016 (class 0 OID 0)
+-- Dependencies: 226
 -- Name: commande_etat_commande_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -185,7 +185,7 @@ ALTER SEQUENCE public.commande_etat_commande_id_seq OWNED BY public.commande_eta
 
 
 --
--- TOC entry 225 (class 1259 OID 33732)
+-- TOC entry 224 (class 1259 OID 33732)
 -- Name: commande_numero_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -200,8 +200,8 @@ CREATE SEQUENCE public.commande_numero_seq
 ALTER TABLE public.commande_numero_seq OWNER TO postgres;
 
 --
--- TOC entry 3016 (class 0 OID 0)
--- Dependencies: 225
+-- TOC entry 3017 (class 0 OID 0)
+-- Dependencies: 224
 -- Name: commande_numero_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -209,7 +209,7 @@ ALTER SEQUENCE public.commande_numero_seq OWNED BY public.commande.id;
 
 
 --
--- TOC entry 224 (class 1259 OID 33724)
+-- TOC entry 223 (class 1259 OID 33724)
 -- Name: employe; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -223,7 +223,7 @@ CREATE TABLE public.employe (
 ALTER TABLE public.employe OWNER TO postgres;
 
 --
--- TOC entry 215 (class 1259 OID 33666)
+-- TOC entry 214 (class 1259 OID 33666)
 -- Name: etat_commande; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -237,7 +237,7 @@ CREATE TABLE public.etat_commande (
 ALTER TABLE public.etat_commande OWNER TO postgres;
 
 --
--- TOC entry 214 (class 1259 OID 33664)
+-- TOC entry 213 (class 1259 OID 33664)
 -- Name: etat_commande_statut_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -252,8 +252,8 @@ CREATE SEQUENCE public.etat_commande_statut_seq
 ALTER TABLE public.etat_commande_statut_seq OWNER TO postgres;
 
 --
--- TOC entry 3017 (class 0 OID 0)
--- Dependencies: 214
+-- TOC entry 3018 (class 0 OID 0)
+-- Dependencies: 213
 -- Name: etat_commande_statut_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -261,7 +261,7 @@ ALTER SEQUENCE public.etat_commande_statut_seq OWNED BY public.etat_commande.id;
 
 
 --
--- TOC entry 217 (class 1259 OID 33677)
+-- TOC entry 216 (class 1259 OID 33677)
 -- Name: facture; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -278,7 +278,7 @@ CREATE TABLE public.facture (
 ALTER TABLE public.facture OWNER TO postgres;
 
 --
--- TOC entry 216 (class 1259 OID 33675)
+-- TOC entry 215 (class 1259 OID 33675)
 -- Name: facture_id_seq_1; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -293,8 +293,8 @@ CREATE SEQUENCE public.facture_id_seq_1
 ALTER TABLE public.facture_id_seq_1 OWNER TO postgres;
 
 --
--- TOC entry 3018 (class 0 OID 0)
--- Dependencies: 216
+-- TOC entry 3019 (class 0 OID 0)
+-- Dependencies: 215
 -- Name: facture_id_seq_1; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -302,7 +302,7 @@ ALTER SEQUENCE public.facture_id_seq_1 OWNED BY public.facture.id;
 
 
 --
--- TOC entry 234 (class 1259 OID 42417)
+-- TOC entry 233 (class 1259 OID 42417)
 -- Name: ingredient_pizza; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -318,7 +318,7 @@ CREATE TABLE public.ingredient_pizza (
 ALTER TABLE public.ingredient_pizza OWNER TO postgres;
 
 --
--- TOC entry 230 (class 1259 OID 33756)
+-- TOC entry 229 (class 1259 OID 33756)
 -- Name: ligne_de_commande; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -335,7 +335,7 @@ CREATE TABLE public.ligne_de_commande (
 ALTER TABLE public.ligne_de_commande OWNER TO postgres;
 
 --
--- TOC entry 229 (class 1259 OID 33754)
+-- TOC entry 228 (class 1259 OID 33754)
 -- Name: ligne_de_commande_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -350,8 +350,8 @@ CREATE SEQUENCE public.ligne_de_commande_id_seq
 ALTER TABLE public.ligne_de_commande_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3019 (class 0 OID 0)
--- Dependencies: 229
+-- TOC entry 3020 (class 0 OID 0)
+-- Dependencies: 228
 -- Name: ligne_de_commande_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -387,7 +387,7 @@ CREATE SEQUENCE public.pizza_id_seq_2
 ALTER TABLE public.pizza_id_seq_2 OWNER TO postgres;
 
 --
--- TOC entry 3020 (class 0 OID 0)
+-- TOC entry 3021 (class 0 OID 0)
 -- Dependencies: 211
 -- Name: pizza_id_seq_2; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -396,7 +396,7 @@ ALTER SEQUENCE public.pizza_id_seq_2 OWNED BY public.pizza.id;
 
 
 --
--- TOC entry 220 (class 1259 OID 33697)
+-- TOC entry 219 (class 1259 OID 33697)
 -- Name: point_de_vente; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -443,7 +443,7 @@ CREATE SEQUENCE public.produit_id_seq_1
 ALTER TABLE public.produit_id_seq_1 OWNER TO postgres;
 
 --
--- TOC entry 3021 (class 0 OID 0)
+-- TOC entry 3022 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: produit_id_seq_1; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -452,7 +452,7 @@ ALTER SEQUENCE public.produit_id_seq_1 OWNED BY public.produit.id;
 
 
 --
--- TOC entry 233 (class 1259 OID 42415)
+-- TOC entry 232 (class 1259 OID 42415)
 -- Name: quantite_ingredient_pizza_id_quantite_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -467,8 +467,8 @@ CREATE SEQUENCE public.quantite_ingredient_pizza_id_quantite_seq
 ALTER TABLE public.quantite_ingredient_pizza_id_quantite_seq OWNER TO postgres;
 
 --
--- TOC entry 3022 (class 0 OID 0)
--- Dependencies: 233
+-- TOC entry 3023 (class 0 OID 0)
+-- Dependencies: 232
 -- Name: quantite_ingredient_pizza_id_quantite_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -476,7 +476,7 @@ ALTER SEQUENCE public.quantite_ingredient_pizza_id_quantite_seq OWNED BY public.
 
 
 --
--- TOC entry 235 (class 1259 OID 42451)
+-- TOC entry 234 (class 1259 OID 42451)
 -- Name: recette; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -489,7 +489,7 @@ CREATE TABLE public.recette (
 ALTER TABLE public.recette OWNER TO postgres;
 
 --
--- TOC entry 221 (class 1259 OID 33705)
+-- TOC entry 220 (class 1259 OID 33705)
 -- Name: role; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -532,7 +532,7 @@ CREATE SEQUENCE public.statut_id_seq_1
 ALTER TABLE public.statut_id_seq_1 OWNER TO postgres;
 
 --
--- TOC entry 3023 (class 0 OID 0)
+-- TOC entry 3024 (class 0 OID 0)
 -- Dependencies: 204
 -- Name: statut_id_seq_1; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -541,16 +541,17 @@ ALTER SEQUENCE public.statut_id_seq_1 OWNED BY public.statut.id;
 
 
 --
--- TOC entry 213 (class 1259 OID 33656)
+-- TOC entry 235 (class 1259 OID 43427)
 -- Name: stock; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.stock (
     code_ean character varying(13) NOT NULL,
+    date_de_peremption date,
     id_produit_de_base numeric NOT NULL,
-    quantite_restante real NOT NULL,
+    quantite_restante numeric NOT NULL,
     date_achat date NOT NULL,
-    date_de_peremption date
+    point_de_vente numeric(14,0) NOT NULL
 );
 
 
@@ -571,7 +572,7 @@ CREATE TABLE public.taille (
 ALTER TABLE public.taille OWNER TO postgres;
 
 --
--- TOC entry 223 (class 1259 OID 33715)
+-- TOC entry 222 (class 1259 OID 33715)
 -- Name: utilisateur; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -592,8 +593,8 @@ CREATE TABLE public.utilisateur (
 ALTER TABLE public.utilisateur OWNER TO postgres;
 
 --
--- TOC entry 3024 (class 0 OID 0)
--- Dependencies: 223
+-- TOC entry 3025 (class 0 OID 0)
+-- Dependencies: 222
 -- Name: COLUMN utilisateur.type; Type: COMMENT; Schema: public; Owner: postgres
 --
 
@@ -606,7 +607,7 @@ COMMENT ON COLUMN public.utilisateur.type IS 'le type d''utilisateur correspond 
 
 
 --
--- TOC entry 222 (class 1259 OID 33713)
+-- TOC entry 221 (class 1259 OID 33713)
 -- Name: utilisateur_id_utilisateur_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -621,8 +622,8 @@ CREATE SEQUENCE public.utilisateur_id_utilisateur_seq
 ALTER TABLE public.utilisateur_id_utilisateur_seq OWNER TO postgres;
 
 --
--- TOC entry 3025 (class 0 OID 0)
--- Dependencies: 222
+-- TOC entry 3026 (class 0 OID 0)
+-- Dependencies: 221
 -- Name: utilisateur_id_utilisateur_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -726,7 +727,7 @@ ALTER TABLE ONLY public.utilisateur ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
--- TOC entry 2837 (class 2606 OID 33696)
+-- TOC entry 2835 (class 2606 OID 33696)
 -- Name: adresse adresse_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -735,7 +736,7 @@ ALTER TABLE ONLY public.adresse
 
 
 --
--- TOC entry 2855 (class 2606 OID 33780)
+-- TOC entry 2853 (class 2606 OID 33780)
 -- Name: authentification authentification_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -753,7 +754,7 @@ ALTER TABLE ONLY public.categorie
 
 
 --
--- TOC entry 2853 (class 2606 OID 33772)
+-- TOC entry 2851 (class 2606 OID 33772)
 -- Name: client client_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -762,7 +763,7 @@ ALTER TABLE ONLY public.client
 
 
 --
--- TOC entry 2849 (class 2606 OID 33753)
+-- TOC entry 2847 (class 2606 OID 33753)
 -- Name: commande_etat_commande commande_etat_commande_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -771,7 +772,7 @@ ALTER TABLE ONLY public.commande_etat_commande
 
 
 --
--- TOC entry 2847 (class 2606 OID 33742)
+-- TOC entry 2845 (class 2606 OID 33742)
 -- Name: commande commande_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -780,7 +781,7 @@ ALTER TABLE ONLY public.commande
 
 
 --
--- TOC entry 2845 (class 2606 OID 33731)
+-- TOC entry 2843 (class 2606 OID 33731)
 -- Name: employe employe_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -789,7 +790,7 @@ ALTER TABLE ONLY public.employe
 
 
 --
--- TOC entry 2832 (class 2606 OID 33674)
+-- TOC entry 2830 (class 2606 OID 33674)
 -- Name: etat_commande etat_commande_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -798,7 +799,7 @@ ALTER TABLE ONLY public.etat_commande
 
 
 --
--- TOC entry 2834 (class 2606 OID 33685)
+-- TOC entry 2832 (class 2606 OID 33685)
 -- Name: facture facture_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -807,7 +808,7 @@ ALTER TABLE ONLY public.facture
 
 
 --
--- TOC entry 2851 (class 2606 OID 33764)
+-- TOC entry 2849 (class 2606 OID 33764)
 -- Name: ligne_de_commande ligne_de_commande_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -825,7 +826,7 @@ ALTER TABLE ONLY public.pizza
 
 
 --
--- TOC entry 2839 (class 2606 OID 33704)
+-- TOC entry 2837 (class 2606 OID 33704)
 -- Name: point_de_vente point_de_vente_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -843,7 +844,7 @@ ALTER TABLE ONLY public.produit
 
 
 --
--- TOC entry 2857 (class 2606 OID 42425)
+-- TOC entry 2855 (class 2606 OID 42425)
 -- Name: ingredient_pizza quantite_ingredient_pizza_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -852,7 +853,7 @@ ALTER TABLE ONLY public.ingredient_pizza
 
 
 --
--- TOC entry 2859 (class 2606 OID 42458)
+-- TOC entry 2857 (class 2606 OID 42458)
 -- Name: recette recette_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -861,7 +862,7 @@ ALTER TABLE ONLY public.recette
 
 
 --
--- TOC entry 2841 (class 2606 OID 33712)
+-- TOC entry 2839 (class 2606 OID 33712)
 -- Name: role role_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -879,7 +880,7 @@ ALTER TABLE ONLY public.statut
 
 
 --
--- TOC entry 2830 (class 2606 OID 33663)
+-- TOC entry 2859 (class 2606 OID 43434)
 -- Name: stock stock_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -897,7 +898,7 @@ ALTER TABLE ONLY public.taille
 
 
 --
--- TOC entry 2843 (class 2606 OID 33723)
+-- TOC entry 2841 (class 2606 OID 33723)
 -- Name: utilisateur utilisateur_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -906,7 +907,7 @@ ALTER TABLE ONLY public.utilisateur
 
 
 --
--- TOC entry 2835 (class 1259 OID 34198)
+-- TOC entry 2833 (class 1259 OID 34198)
 -- Name: fki_commande_facture_fk; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -914,7 +915,7 @@ CREATE INDEX fki_commande_facture_fk ON public.facture USING btree (id_commande)
 
 
 --
--- TOC entry 2875 (class 2606 OID 33836)
+-- TOC entry 2874 (class 2606 OID 33836)
 -- Name: client adresse_client_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -923,7 +924,7 @@ ALTER TABLE ONLY public.client
 
 
 --
--- TOC entry 2868 (class 2606 OID 33846)
+-- TOC entry 2867 (class 2606 OID 33846)
 -- Name: commande adresse_commande_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -932,7 +933,7 @@ ALTER TABLE ONLY public.commande
 
 
 --
--- TOC entry 2864 (class 2606 OID 33841)
+-- TOC entry 2863 (class 2606 OID 33841)
 -- Name: point_de_vente adresse_point_de_vente_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -941,7 +942,7 @@ ALTER TABLE ONLY public.point_de_vente
 
 
 --
--- TOC entry 2865 (class 2606 OID 33831)
+-- TOC entry 2864 (class 2606 OID 33831)
 -- Name: utilisateur adresse_utilisateur_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -959,7 +960,7 @@ ALTER TABLE ONLY public.produit
 
 
 --
--- TOC entry 2872 (class 2606 OID 33886)
+-- TOC entry 2871 (class 2606 OID 33886)
 -- Name: commande_etat_commande commande_commande_etat_commande_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -968,7 +969,7 @@ ALTER TABLE ONLY public.commande_etat_commande
 
 
 --
--- TOC entry 2863 (class 2606 OID 34199)
+-- TOC entry 2862 (class 2606 OID 34199)
 -- Name: facture commande_facture_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -977,7 +978,7 @@ ALTER TABLE ONLY public.facture
 
 
 --
--- TOC entry 2874 (class 2606 OID 33881)
+-- TOC entry 2873 (class 2606 OID 33881)
 -- Name: ligne_de_commande commande_ligne_de_commande_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -986,7 +987,7 @@ ALTER TABLE ONLY public.ligne_de_commande
 
 
 --
--- TOC entry 2870 (class 2606 OID 33876)
+-- TOC entry 2869 (class 2606 OID 33876)
 -- Name: commande employe_commande_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -995,7 +996,7 @@ ALTER TABLE ONLY public.commande
 
 
 --
--- TOC entry 2871 (class 2606 OID 33821)
+-- TOC entry 2870 (class 2606 OID 33821)
 -- Name: commande_etat_commande etat_commande_commande_etat_commande_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1004,7 +1005,7 @@ ALTER TABLE ONLY public.commande_etat_commande
 
 
 --
--- TOC entry 2879 (class 2606 OID 42466)
+-- TOC entry 2878 (class 2606 OID 42466)
 -- Name: ingredient_pizza pizza_ingredient_pizza_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1013,7 +1014,7 @@ ALTER TABLE ONLY public.ingredient_pizza
 
 
 --
--- TOC entry 2881 (class 2606 OID 42459)
+-- TOC entry 2880 (class 2606 OID 42459)
 -- Name: recette pizza_recette_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1022,7 +1023,7 @@ ALTER TABLE ONLY public.recette
 
 
 --
--- TOC entry 2869 (class 2606 OID 33851)
+-- TOC entry 2868 (class 2606 OID 33851)
 -- Name: commande point_de_vente_commande_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1031,7 +1032,16 @@ ALTER TABLE ONLY public.commande
 
 
 --
--- TOC entry 2873 (class 2606 OID 33796)
+-- TOC entry 2882 (class 2606 OID 43440)
+-- Name: stock point_de_vente_stock_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.stock
+    ADD CONSTRAINT point_de_vente_stock_fk FOREIGN KEY (point_de_vente) REFERENCES public.point_de_vente(siret);
+
+
+--
+-- TOC entry 2872 (class 2606 OID 33796)
 -- Name: ligne_de_commande produit_ligne_de_commande_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1040,7 +1050,7 @@ ALTER TABLE ONLY public.ligne_de_commande
 
 
 --
--- TOC entry 2878 (class 2606 OID 42441)
+-- TOC entry 2877 (class 2606 OID 42441)
 -- Name: ingredient_pizza produit_quantite_ingredient_pizza_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1049,7 +1059,7 @@ ALTER TABLE ONLY public.ingredient_pizza
 
 
 --
--- TOC entry 2861 (class 2606 OID 33801)
+-- TOC entry 2881 (class 2606 OID 43435)
 -- Name: stock produit_stock_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1058,7 +1068,7 @@ ALTER TABLE ONLY public.stock
 
 
 --
--- TOC entry 2866 (class 2606 OID 33856)
+-- TOC entry 2865 (class 2606 OID 33856)
 -- Name: employe role_employe_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1067,7 +1077,7 @@ ALTER TABLE ONLY public.employe
 
 
 --
--- TOC entry 2862 (class 2606 OID 33781)
+-- TOC entry 2861 (class 2606 OID 33781)
 -- Name: etat_commande statut_etat_commande_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1076,7 +1086,7 @@ ALTER TABLE ONLY public.etat_commande
 
 
 --
--- TOC entry 2880 (class 2606 OID 42484)
+-- TOC entry 2879 (class 2606 OID 42484)
 -- Name: ingredient_pizza taille_ingredient_pizza_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1085,7 +1095,7 @@ ALTER TABLE ONLY public.ingredient_pizza
 
 
 --
--- TOC entry 2877 (class 2606 OID 33861)
+-- TOC entry 2876 (class 2606 OID 33861)
 -- Name: authentification utilisateur_authentification_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1094,7 +1104,7 @@ ALTER TABLE ONLY public.authentification
 
 
 --
--- TOC entry 2876 (class 2606 OID 33866)
+-- TOC entry 2875 (class 2606 OID 33866)
 -- Name: client utilisateur_client_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1103,7 +1113,7 @@ ALTER TABLE ONLY public.client
 
 
 --
--- TOC entry 2867 (class 2606 OID 33871)
+-- TOC entry 2866 (class 2606 OID 33871)
 -- Name: employe utilisateur_employe_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1111,7 +1121,7 @@ ALTER TABLE ONLY public.employe
     ADD CONSTRAINT utilisateur_employe_fk FOREIGN KEY (id) REFERENCES public.utilisateur(id);
 
 
--- Completed on 2020-02-08 08:18:24
+-- Completed on 2020-02-13 10:47:02
 
 --
 -- PostgreSQL database dump complete
